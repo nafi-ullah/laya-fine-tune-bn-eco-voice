@@ -32,7 +32,8 @@ Fine-tuning works (intent 22% → 91%, escalate 14% → 95%). The main open issu
 two-word replies (হ্যাঁ, জি, না) are read as `out_of_scope`**, because almost no training replies were that
 short. See [`reports/ANALYSIS.md`](reports/ANALYSIS.md) for the diagnosis and the round-2 fix.
 Details: [`reports/FINETUNE_RESULTS.md`](reports/FINETUNE_RESULTS.md) · zero-shot study:
-[`zero_shot/COMPARISON.md`](zero_shot/COMPARISON.md).
+[`zero_shot/COMPARISON.md`](zero_shot/COMPARISON.md) · against Jev (TypeSafe's closed decision model, via OpenRouter),
+in Bangla and English: [`reports/JEV_COMPARISON.md`](reports/JEV_COMPARISON.md).
 
 ## Repository layout
 
@@ -112,6 +113,7 @@ Until round 2 fixes short replies, **keep a keyword rule in front of it for sing
 | 7 | `make train` | RLCD fine-tune (upstream recipe), M5 MPS bf16 ≈ 2.4 h | `checkpoints/R1`, `reports/runs.jsonl` |
 | 8 | `make convert` | `laya-mlx convert` to FP16 + PyTorch/MLX parity check | `checkpoints/R1-mlx` |
 | 9 | `make bench` | base vs R1 vs R2 vs cascade on every test set + success gate (exits 1 on any yes↔no mix-up) | `reports/FINETUNE_RESULTS.{md,json}` |
+| 9b | `make jev` | Laya zero-shot vs R1 vs Jev (`typesafe/jev-1.13`, needs `OPENROUTER_API_KEY`) on paired Bangla / English sets; answers cached, ≈ $0.05 per full run | `reports/JEV_COMPARISON.{md,json}` |
 | 10 | `make hf-export hf-push` · `make hf-model` | publish dataset / model with cards and credits | Hub repos |
 
 All steps are **resumable and cached**. The LLM steps key each result by (text, prompt version), so

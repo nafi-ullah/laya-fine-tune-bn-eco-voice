@@ -44,6 +44,9 @@ convert:            ## step 8 — MLX FP16 + PyTorch/MLX parity
 bench:              ## step 9 — base vs R1 vs R2 vs cascade → reports/FINETUNE_RESULTS.md
 	HF_HUB_OFFLINE=1 $(PY) $(S)/08_benchmark.py
 
+jev:                ## Laya zero-shot vs fine-tuned vs Jev (OpenRouter), Bangla + English → reports/JEV_COMPARISON.md
+	HF_HUB_OFFLINE=1 $(PY) $(S)/12_jev_compare.py
+
 colab-pack:         ## bundle items + code for notebooks/colab_train.ipynb
 	$(S)/pack_colab.sh
 

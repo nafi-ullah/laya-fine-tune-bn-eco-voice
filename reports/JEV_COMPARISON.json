@@ -1,0 +1,473 @@
+{
+  "metrics": {
+    "laya_zero_shot": {
+      "confirm_frozen/bn": {
+        "n": 23,
+        "acc": 0.6521739130434783,
+        "brier": 0.48536651956521737,
+        "ece": 0.19705652173913044,
+        "cov_hi": 0.13043478260869565,
+        "acc_hi": 1.0
+      },
+      "confirm_frozen/en": {
+        "n": 23,
+        "acc": 0.5217391304347826,
+        "brier": 0.5932505517391304,
+        "ece": 0.21010869565217388,
+        "cov_hi": 0.17391304347826086,
+        "acc_hi": 1.0
+      },
+      "confirm_test/bn": {
+        "n": 186,
+        "acc": 0.43010752688172044,
+        "brier": 0.6291845960752687,
+        "ece": 0.09526559139784947,
+        "cov_hi": 0.06989247311827956,
+        "acc_hi": 1.0
+      },
+      "confirm_test/en": {
+        "n": 186,
+        "acc": 0.4838709677419355,
+        "brier": 0.6264070254301075,
+        "ece": 0.14667258064516128,
+        "cov_hi": 0.04838709677419355,
+        "acc_hi": 1.0
+      },
+      "intent/bn": {
+        "n": 549,
+        "acc": 0.2167577413479053,
+        "brier": 1.2145405201275046,
+        "ece": 0.5368582877959928,
+        "cov_hi": 0.5245901639344263,
+        "acc_hi": 0.2673611111111111
+      },
+      "intent/en": {
+        "n": 254,
+        "acc": 0.484251968503937,
+        "brier": 0.8171106792519685,
+        "ece": 0.3655070866141732,
+        "cov_hi": 0.6929133858267716,
+        "acc_hi": 0.5852272727272727
+      },
+      "intent/banglish": {
+        "n": 288,
+        "acc": 0.2916666666666667,
+        "brier": 1.1438810219444444,
+        "ece": 0.5112913194444444,
+        "cov_hi": 0.6076388888888888,
+        "acc_hi": 0.3942857142857143
+      },
+      "escalate/bn": {
+        "n": 549,
+        "acc": 0.13296903460837886,
+        "brier": 1.6085903866302367,
+        "ece": 0.8287251366120221,
+        "cov_hi": 0.9817850637522769,
+        "acc_hi": 0.1280148423005566
+      },
+      "escalate/en": {
+        "n": 254,
+        "acc": 0.18110236220472442,
+        "brier": 1.426648755984252,
+        "ece": 0.7423570866141732,
+        "cov_hi": 0.9015748031496063,
+        "acc_hi": 0.1703056768558952
+      },
+      "escalate/banglish": {
+        "n": 288,
+        "acc": 0.11458333333333333,
+        "brier": 1.7210737201388886,
+        "ece": 0.8720006944444444,
+        "cov_hi": 0.9965277777777778,
+        "acc_hi": 0.11498257839721254
+      },
+      "router/bn": {
+        "n": 16,
+        "acc": 0.5625,
+        "brier": 0.640961453,
+        "ece": 0.23193125000000003,
+        "cov_hi": 0.625,
+        "acc_hi": 0.8
+      },
+      "router/en": {
+        "n": 16,
+        "acc": 0.625,
+        "brier": 0.8007499149999999,
+        "ece": 0.25793124999999995,
+        "cov_hi": 0.8125,
+        "acc_hi": 0.6923076923076923
+      }
+    },
+    "laya_finetuned": {
+      "confirm_frozen/bn": {
+        "n": 23,
+        "acc": 0.6956521739130435,
+        "brier": 0.45989839260869564,
+        "ece": 0.17154347826086963,
+        "cov_hi": 0.8260869565217391,
+        "acc_hi": 0.7894736842105263
+      },
+      "confirm_frozen/en": {
+        "n": 23,
+        "acc": 0.8260869565217391,
+        "brier": 0.2748225895652173,
+        "ece": 0.16791304347826086,
+        "cov_hi": 0.6086956521739131,
+        "acc_hi": 0.9285714285714286
+      },
+      "confirm_test/bn": {
+        "n": 186,
+        "acc": 0.9946236559139785,
+        "brier": 0.020650125860215054,
+        "ece": 0.08485215053763452,
+        "cov_hi": 0.989247311827957,
+        "acc_hi": 0.9945652173913043
+      },
+      "confirm_test/en": {
+        "n": 186,
+        "acc": 0.967741935483871,
+        "brier": 0.06910331338709677,
+        "ece": 0.09592849462365599,
+        "cov_hi": 0.9086021505376344,
+        "acc_hi": 0.9881656804733728
+      },
+      "intent/bn": {
+        "n": 549,
+        "acc": 0.9052823315118397,
+        "brier": 0.15453840400728597,
+        "ece": 0.11076448087431699,
+        "cov_hi": 0.7304189435336976,
+        "acc_hi": 0.9900249376558603
+      },
+      "intent/en": {
+        "n": 254,
+        "acc": 0.8543307086614174,
+        "brier": 0.22610874437007875,
+        "ece": 0.10142165354330705,
+        "cov_hi": 0.7598425196850394,
+        "acc_hi": 0.9533678756476683
+      },
+      "intent/banglish": {
+        "n": 288,
+        "acc": 0.7604166666666666,
+        "brier": 0.35112763024305554,
+        "ece": 0.10876909722222228,
+        "cov_hi": 0.6979166666666666,
+        "acc_hi": 0.9253731343283582
+      },
+      "escalate/bn": {
+        "n": 549,
+        "acc": 0.9508196721311475,
+        "brier": 0.10050154495446266,
+        "ece": 0.08792622950819672,
+        "cov_hi": 0.907103825136612,
+        "acc_hi": 0.9678714859437751
+      },
+      "escalate/en": {
+        "n": 254,
+        "acc": 0.9409448818897638,
+        "brier": 0.10028181267716536,
+        "ece": 0.09444370078740154,
+        "cov_hi": 0.9094488188976378,
+        "acc_hi": 0.9696969696969697
+      },
+      "escalate/banglish": {
+        "n": 288,
+        "acc": 0.9583333333333334,
+        "brier": 0.09548344791666667,
+        "ece": 0.09266041666666669,
+        "cov_hi": 0.90625,
+        "acc_hi": 0.9693486590038314
+      },
+      "router/bn": {
+        "n": 16,
+        "acc": 0.8125,
+        "brier": 0.11501202300000002,
+        "ece": 0.08896874999999999,
+        "cov_hi": 0.625,
+        "acc_hi": 0.9
+      },
+      "router/en": {
+        "n": 16,
+        "acc": 0.8125,
+        "brier": 0.277851209,
+        "ece": 0.13135000000000008,
+        "cov_hi": 0.6875,
+        "acc_hi": 0.9090909090909091
+      }
+    },
+    "jev": {
+      "confirm_frozen/bn": {
+        "n": 23,
+        "acc": 1.0,
+        "brier": 0.014895652173913044,
+        "ece": 0.03086956521739139,
+        "cov_hi": 0.9130434782608695,
+        "acc_hi": 1.0
+      },
+      "confirm_frozen/en": {
+        "n": 23,
+        "acc": 1.0,
+        "brier": 0.00026956521739130465,
+        "ece": 0.002608695652173809,
+        "cov_hi": 1.0,
+        "acc_hi": 1.0
+      },
+      "confirm_test/bn": {
+        "n": 186,
+        "acc": 0.9838709677419355,
+        "brier": 0.022431182795698924,
+        "ece": 0.015268817204301026,
+        "cov_hi": 0.9623655913978495,
+        "acc_hi": 1.0
+      },
+      "confirm_test/en": {
+        "n": 186,
+        "acc": 0.9838709677419355,
+        "brier": 0.01900430107526882,
+        "ece": 0.0188709677419355,
+        "cov_hi": 0.9731182795698925,
+        "acc_hi": 1.0
+      },
+      "intent/bn": {
+        "n": 549,
+        "acc": 0.8233151183970856,
+        "brier": 0.2226794171220401,
+        "ece": 0.048633879781420725,
+        "cov_hi": 0.7085610200364298,
+        "acc_hi": 0.9820051413881749
+      },
+      "intent/en": {
+        "n": 254,
+        "acc": 0.9015748031496063,
+        "brier": 0.11459212598425197,
+        "ece": 0.03929133858267718,
+        "cov_hi": 0.84251968503937,
+        "acc_hi": 0.9906542056074766
+      },
+      "intent/banglish": {
+        "n": 288,
+        "acc": 0.5798611111111112,
+        "brier": 0.559628125,
+        "ece": 0.0642708333333333,
+        "cov_hi": 0.3159722222222222,
+        "acc_hi": 0.945054945054945
+      },
+      "escalate/bn": {
+        "n": 549,
+        "acc": 0.8670309653916212,
+        "brier": 0.2884386156648452,
+        "ece": 0.21282331511839708,
+        "cov_hi": 0.09836065573770492,
+        "acc_hi": 1.0
+      },
+      "escalate/en": {
+        "n": 254,
+        "acc": 0.889763779527559,
+        "brier": 0.22740157480314963,
+        "ece": 0.18984251968503935,
+        "cov_hi": 0.18110236220472442,
+        "acc_hi": 1.0
+      },
+      "escalate/banglish": {
+        "n": 288,
+        "acc": 0.6631944444444444,
+        "brier": 0.4137784722222222,
+        "ece": 0.13954861111111105,
+        "cov_hi": 0.006944444444444444,
+        "acc_hi": 1.0
+      },
+      "router/bn": {
+        "n": 16,
+        "acc": 0.9375,
+        "brier": 0.05149999999999999,
+        "ece": 0.10374999999999993,
+        "cov_hi": 0.8125,
+        "acc_hi": 1.0
+      },
+      "router/en": {
+        "n": 16,
+        "acc": 0.9375,
+        "brier": 0.051980000000000005,
+        "ece": 0.10624999999999997,
+        "cov_hi": 0.75,
+        "acc_hi": 1.0
+      }
+    }
+  },
+  "latency": {
+    "laya_zero_shot": {
+      "p50": 17.413249996025115,
+      "p95": 20.73275001021102
+    },
+    "laya_finetuned": {
+      "p50": 16.549584004678763,
+      "p95": 21.01158299774397
+    },
+    "jev": {
+      "p50": 370.81829200906213,
+      "p95": 523.1959579978138
+    }
+  },
+  "info": {
+    "laya_zero_shot": {
+      "where": "local, M5 MacBook (MLX FP16)",
+      "memory": "745 MiB",
+      "cost": "$0 (runs locally)"
+    },
+    "laya_finetuned": {
+      "where": "local, M5 MacBook (MLX FP16)",
+      "memory": "759 MiB",
+      "cost": "$0 (runs locally)"
+    },
+    "jev": {
+      "where": "cloud API (OpenRouter → TypeSafe), `typesafe/jev-1.13-20260917`",
+      "memory": "—",
+      "cost": "$0.045 for 2,362 decisions (≈ $0.0192 / 1k)"
+    }
+  },
+  "yes_no_leaks": {
+    "laya_zero_shot": {
+      "confirm_frozen/bn": 4,
+      "confirm_frozen/en": 7,
+      "confirm_test/bn": 52,
+      "confirm_test/en": 31
+    },
+    "laya_finetuned": {
+      "confirm_frozen/bn": 0,
+      "confirm_frozen/en": 1,
+      "confirm_test/bn": 1,
+      "confirm_test/en": 1
+    },
+    "jev": {
+      "confirm_frozen/bn": 0,
+      "confirm_frozen/en": 0,
+      "confirm_test/bn": 0,
+      "confirm_test/en": 0
+    }
+  },
+  "leaks": {
+    "laya_zero_shot": {
+      "confirm_frozen/bn": [
+        "আচ্ছা রাখেন",
+        "ক্যান্সেল করে দেন",
+        "হ্যাঁ হ্যাঁ পাঠিয়ে দেন",
+        "না না ঠিক আছে, দিয়ে দেন"
+      ],
+      "confirm_frozen/en": [
+        "No",
+        "Please cancel the order",
+        "I don't need it anymore",
+        "Yeah, I don't need it",
+        "Cancel it",
+        "I don't want it",
+        "No thanks, I won't take it now"
+      ],
+      "confirm_test/bn": [
+        "না ভাই, অর্ডারটা ক্যান্সেল করে দেন",
+        "উম, আসলে এখন আর লাগবে না, ক্যান্সেল করে দিন",
+        "আপু আমার অর্ডারটা ক্যান্সেল করে দেন তো",
+        "না থাক, আমার অর্ডারটা ক্যান্সেল করে দিন",
+        "জি, অর্ডারটা ক্যান্সেল করে দেন",
+        "মানে এখন আর নিব না, ক্যান্সেল করে দিন প্লিজ",
+        "না ভাই, ক্যান্সেল করে দেন, এখন আর দরকার নেই",
+        "অর্ডারটা ক্যান্সেল করে দেন, এখন আর নিচ্ছি না",
+        "না আপু, ক্যান্সেল করে দেন, সরি",
+        "আসলে এখন আর লাগবে না, অর্ডারটা ক্যান্সেল করে দিন",
+        "না থাক ভাই, আমারটা ক্যান্সেল করে দেন",
+        "জি, কনফার্ম করে দেন।",
+        "হ্যাঁ ভাই, অর্ডারটা কনফার্ম করেন।",
+        "হুম, ঠিক আছে, কনফার্ম করে ফেলেন।",
+        "জি আপু, এটাই আমার অর্ডার।",
+        "উম, হ্যাঁ ঠিক আছে, কনফার্ম করেন।",
+        "জি ভাই, অর্ডারটা কনফার্ম করে রাখেন।",
+        "হ্যাঁ, সব ঠিক আছে, কনফার্ম করেন।",
+        "জ্বি, এই অর্ডারটাই কনফার্ম করেন।",
+        "হুম, এটাই ঠিক আছে, কনফার্ম করেন।",
+        "না না সমস্যা নেই, কনফার্ম করে দেন।",
+        "না না সব ঠিক আছে, কনফার্ম করেন আপু।",
+        "না না চেঞ্জ করতে হবে না, কনফার্ম করেন।",
+        "না না এটা থাক, অর্ডারটা কনফার্ম করে দেন।",
+        "না না আর কিছু যোগ করবেন না, এটাই ফাইনাল।",
+        "না না ঠিক আছে, আমার অর্ডারটা কনফার্ম করেন।",
+        "না না আর কিছু লাগবে না, দিয়ে দেন।",
+        "না না আর দেখার দরকার নেই, কনফার্ম করে দেন।",
+        "না না ঠিক আছে ভাই, অর্ডারটা কনফার্ম করেন।",
+        "জি, অর্ডারটা কনফার্ম করে ফেলেন",
+        "জি জি কনফার্ম করে ফেলেন",
+        "আচ্ছা ভাই কনফার্ম করে দেন",
+        "হ্যাঁ এটাই অর্ডার করে দেন",
+        "না ভাই, এখন তো টাকা নেই, পরে অর্ডার করব",
+        "আপু, আমার তো এখন বাজেট নেই, ক্যান্সেল করে দিন",
+        "না ভাইয়া, টাকাটা হাতে নেই, পরে দেখব",
+        "মানে এখন আর নিতে পারছি না, পরে অর্ডার করব",
+        "না আপু, আপাতত লাগবে না, পরে যোগাযোগ করব",
+        "উম, এখন অর্ডারটা ক্যান্সেল করুন, পরে দেখে নেব",
+        "উম, আমি আসলে এখন এটা নিব না, ক্যান্সেল করে দিন।",
+        "না আপু, আমার অর্ডারটা ক্যান্সেল করে দেন প্লিজ।",
+        "আসলে এখন আর প্রয়োজন নেই, ক্যান্সেল করে দিন।",
+        "হুম, আমার অর্ডারটা ক্যান্সেল করে দেন ভাই।",
+        "না ভাই, এখন আর লাগবে না, ক্যান্সেল করে দেন।",
+        "মানে এখন আর নিব না, অর্ডারটা ক্যান্সেল করুন।",
+        "জি না, আমার অর্ডারটা ক্যান্সেল করে দেন।",
+        "আমি এখন নিচ্ছি না, অর্ডারটা ক্যান্সেল করে দিন।",
+        "জি না, আমার আর দরকার নেই, এটা ক্যান্সেল করে দিন",
+        "জি আপু, আসলে অর্ডারটা এখন ক্যান্সেল করে দিতে পারেন",
+        "হ্যাঁ, অর্ডারটা ক্যান্সেল করে দিন প্লিজ",
+        "জি, অর্ডারটা আর কনফার্ম করতে হবে না, ক্যান্সেল করে দিন",
+        "উম, না থাক, অর্ডারটা ক্যান্সেল করে দিন"
+      ],
+      "confirm_test/en": [
+        "No brother, please cancel the order.",
+        "Um, actually I don't need it anymore, please cancel it.",
+        "Miss, could you please cancel my order?",
+        "Yes, please cancel the order.",
+        "I mean I won't take it anymore, please cancel it, please.",
+        "No brother, cancel it, I don't need it anymore.",
+        "No miss, please cancel it, sorry.",
+        "Actually I don't need it anymore, please cancel the order.",
+        "No brother, I don't have the money right now, I'll order later.",
+        "I don't have the budget right now, please cancel it.",
+        "No brother, I don't have the money on hand, I'll see later.",
+        "Hmm, not now, my budget is finished.",
+        "No, I don't need it for now, I'll get in touch later.",
+        "Brother, I don't have money in my pocket right now, I'll take it later.",
+        "No brother, I don't have the budget right now, I'll take it later.",
+        "No brother, please cancel my order for the time being.",
+        "Um, I actually won't take it now, please cancel it.",
+        "No, please cancel my order, please.",
+        "Actually, I don't need it anymore, please cancel it.",
+        "No brother, I don't need it anymore, please cancel it.",
+        "I mean, I won't take it now, please cancel the order.",
+        "No no, please cancel my order.",
+        "No, please cancel my order.",
+        "I'm not taking it now, please cancel the order.",
+        "No, I don't need it anymore, please cancel it.",
+        "Yes brother, never mind, I'm not taking it for now.",
+        "No, forget about it for now, I don't need it.",
+        "Yeah, please cancel the order.",
+        "Yeah, I mean, I don't really need it anymore, just forget it.",
+        "No, I don't need this order.",
+        "Um, no, never mind, just cancel the order."
+      ]
+    },
+    "laya_finetuned": {
+      "confirm_frozen/bn": [],
+      "confirm_frozen/en": [
+        "Okay, keep it"
+      ],
+      "confirm_test/bn": [
+        "না না আর কিছু যোগ করবেন না, এটাই ফাইনাল।"
+      ],
+      "confirm_test/en": [
+        "No, never mind, there's no need to confirm the order now."
+      ]
+    },
+    "jev": {
+      "confirm_frozen/bn": [],
+      "confirm_frozen/en": [],
+      "confirm_test/bn": [],
+      "confirm_test/en": []
+    }
+  }
+}

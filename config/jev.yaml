@@ -1,0 +1,36 @@
+# Laya (zero-shot + fine-tuned) vs Jev — scripts/12_jev_compare.py → reports/JEV_COMPARISON.md
+#
+# Jev = TypeSafe's closed "System One" decision model, served by OpenRouter's Decisions API.
+# Same typed-question format as Laya (choice / noul / score), so both get byte-identical questions.
+# Key: OPENROUTER_API_KEY in ./.env.
+
+jev:
+  model: typesafe/jev-1.13          # pinned snapshot (the ~typesafe/jev-latest alias moves)
+  url: https://openrouter.ai/api/alpha/decisions
+  concurrency: 8
+  http_attempts: 6                   # 429/5xx backoff attempts per request
+  latency_calls: 40                  # sequential, uncached calls timed for the latency row
+
+laya:                                # label → MLX model id or path (relative to repo root)
+  laya_zero_shot: aac6fef/laya-multilingual-mlx
+  laya_finetuned: checkpoints/R1-mlx
+
+# English order-confirm state: same conversation shape as the Bangla one, English agent turn.
+agent_turn_en: "Shall I confirm your order?"
+
+# The generated Bangla confirm test split (186) has no English twin; Gemini translates it once
+# (cached in data/build/test_order_confirm_en.jsonl). Labels are copied from the Bangla row.
+translate:
+  batch_size: 25
+  temperature: 0.2
+  system: |
+    You translate Bangla customer replies from a phone call into natural spoken English, the way
+    an English-speaking customer would say the same thing on the phone.
+    Rules:
+    - Keep the exact meaning, including hedges, fillers, self-corrections and mixed signals
+      (e.g. "না না ঠিক আছে, দিয়ে দেন" means the customer DOES want it: "No no, it's fine, send it").
+    - Do not explain, do not add or remove information, do not clean up the customer's intent.
+    - Brand / payment names stay as they are (bKash, Nagad).
+    Return ONLY a JSON array with one row per input, same ids: [[id, "english text"], ...]
+  example_in: '[{"id": 1, "text": "হ্যাঁ, এখন আর লাগবে না"}, {"id": 2, "text": "ডেলিভারি চার্জ কত পড়বে?"}]'
+  example_out: '[[1, "Yeah, I don''t need it anymore"], [2, "How much will the delivery charge be?"]]'
