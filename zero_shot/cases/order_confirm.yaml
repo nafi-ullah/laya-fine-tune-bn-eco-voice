@@ -1,0 +1,12 @@
+# ORDER_CONFIRM set — reuses the hybrid agent's labeled confusion-matrix set
+# verbatim (single source of truth) so Laya and the intent cascade are scored
+# on identical utterances. Extra Laya-only cases can be appended under `cases`.
+decision: order_confirm
+source: ../../eval_sets/hybrid_order_confirm_labeled.yaml   # relative to this file
+cases:
+  # Harder paraphrases / traps not in the hybrid set.
+  - { utterance: "হ্যাঁ হ্যাঁ পাঠিয়ে দেন", expect: { intent: "yes" } }
+  - { utterance: "না না ঠিক আছে, দিয়ে দেন", expect: { intent: "yes" } }
+  - { utterance: "জি না, এখন নিব না", expect: { intent: "no" } }
+  - { utterance: "লাইনটা কেটে যাচ্ছিল, আরেকবার বলবেন", expect: { intent: "repeat" } }
+  - { utterance: "ক্যাশ অন ডেলিভারি হবে তো", expect: { intent: "out_of_scope" } }

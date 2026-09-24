@@ -1,0 +1,62 @@
+# Dataset build, soft-target and split settings.
+seed: 20260924
+
+dataset:
+  repo: Badhon/BanglaEComIntent
+  license: cc-by-nc-sa-4.0   # research only — see PLAN.md (R2 run drops these rows)
+
+# Soft targets (gold.probabilities). Hard dataset labels are smoothed; the
+# LLM's "high ambiguity + alt_intent" flag moves mass to the second-best option.
+soft_targets:
+  intent_gold: 0.90
+  intent_ambiguous_gold: 0.70
+  intent_ambiguous_alt: 0.20
+  confirm_gold: 0.92
+  escalate:
+    agent_request: 0.95          # P(true)
+    llm_escalate_true: 0.80      # complaint etc. that the LLM marked escalate=1
+    llm_escalate_false: 0.10
+    default: 0.05
+
+# How many times each decision family is repeated in the train set.
+class_weights:
+  order_confirm: 2
+  intent: 1
+  escalate: 1
+
+# order_confirm out_of_scope class = real dataset rows from these intents.
+confirm_out_of_scope:
+  from_intents: [shipping_delivery, payment_issue, price_inquiry, product_availability,
+                 product_search, complaint, discount_offer, order_status]
+  per_class_target: 300
+
+confirm_generation:
+  per_class_target: 300          # yes / no / repeat after dedupe
+  test_fraction: 0.15            # split by seed phrase
+
+split:
+  calib_fraction: 0.10           # held out of training, used for temperature fit
+  # Drop train rows this close (cosine) to an eval row. e5-small scores short same-template
+  # Bangla sentences ≥0.95 even with opposite meaning ("…কনফার্ম করে দিন" vs "…ক্যান্সেল করে দেন" = 0.956),
+  # so 0.95 is kept only for the frozen hand-written benchmark; test splits use 0.98.
+  near_dup_cosine_frozen: 0.95
+  near_dup_cosine_test: 0.98
+  # Multilingual on purpose: MiniLM-L6 is English-only and gives meaningless Bangla cosines.
+  # (backend/app/voice/hybrid/nlu/embedder.py names this model as its multilingual swap.)
+  embedder: intfloat/multilingual-e5-small
+  # Frozen external eval sets — never trained on (paths relative to repo root).
+  frozen_eval:
+    - eval_sets/hybrid_order_confirm_labeled.yaml
+    - zero_shot/cases/order_confirm.yaml
+    - zero_shot/cases/order_confirm_en.yaml
+    - zero_shot/cases/ecommerce_router.yaml
+    - zero_shot/cases/ecommerce_router_en.yaml
+
+# Your own labelled data (e.g. real call transcripts). Every data/extra/*.jsonl row:
+#   {"decision": "order_confirm"|"intent"|"escalate", "text": "...", "label": "...",
+#    "split": "train"|"test" (optional, default train), "source": "..." (optional)}
+# order_confirm label ∈ yes/no/repeat/out_of_scope · intent label ∈ the 15 intents · escalate label ∈ true/false
+extra_dir: data/extra
+
+confirm_seeds:
+  anchors_dir: seeds/anchors   # yes.yaml / no.yaml / repeat.yaml (hand-written seed phrases)

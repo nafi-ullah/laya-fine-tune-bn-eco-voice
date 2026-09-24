@@ -1,0 +1,30 @@
+# Step 9 benchmark settings (08_benchmark.py).
+
+models:                       # label → MLX model id or path (relative to models/laya-fine-tune)
+  base: aac6fef/laya-multilingual-mlx
+  R1: checkpoints/R1-mlx
+  R2: checkpoints/R2-mlx      # skipped if missing
+
+# Cascade column (optional): set VOICE_AGENT_BACKEND=/path/to/voice-agent-v1/backend in .env.
+backend_python: venv/bin/python   # relative to VOICE_AGENT_BACKEND
+
+# The frozen router suites use a coarser label set than the 15 trained intents.
+# A prediction counts as correct if it is in the listed set.
+router_intent_map:
+  order_status: [order_status, shipping_delivery]
+  refund: [return_refund]
+  product_question: [product_search, product_availability, price_inquiry]
+  complaint: [complaint]
+  other: [out_of_scope]
+
+latency:
+  warmup: 5
+  n_calls: 100                # single-question calls timed on a mix of test items
+
+confidence_threshold: 0.8     # report accuracy + coverage above this max-probability
+
+gate:
+  yes_no_leaks: 0
+  order_confirm_accuracy: 0.90
+  intent_accuracy_bn: 0.85    # Bangla-script (bn + bn_translit) part of the dataset test split
+  p50_ms: 15

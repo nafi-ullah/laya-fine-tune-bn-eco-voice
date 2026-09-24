@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Laya typed-decisions case (LocalLLaMA/typed-decisions format, one question per case)",
+  "type": "object",
+  "required": ["id", "workflow", "state", "questions", "gold", "meta"],
+  "properties": {
+    "id": {"type": "string"},
+    "workflow": {"enum": ["order_confirm", "intent", "escalate"]},
+    "state": {
+      "oneOf": [
+        {"type": "string", "minLength": 1},
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["role", "content"],
+            "properties": {"role": {"enum": ["assistant", "user"]}, "content": {"type": "string"}}
+          }
+        }
+      ]
+    },
+    "questions": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["type", "instructions", "criteria"],
+        "properties": {
+          "type": {"enum": ["choice", "noul", "score"]},
+          "instructions": {"type": "string"},
+          "criteria": {"type": ["object", "array"]}
+        }
+      }
+    },
+    "gold": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["type", "label", "probabilities"],
+        "properties": {
+          "type": {"enum": ["choice", "noul", "score"]},
+          "label": {"type": "string"},
+          "probabilities": {
+            "type": "object",
+            "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["source", "text", "script", "nc"],
+      "properties": {
+        "source": {"type": "string"},
+        "text": {"type": "string"},
+        "script": {"type": "string"},
+        "nc": {"type": "boolean", "description": "derived from the CC-BY-NC dataset"}
+      }
+    }
+  }
+}

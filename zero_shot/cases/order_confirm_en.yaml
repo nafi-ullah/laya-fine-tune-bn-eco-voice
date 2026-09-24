@@ -1,0 +1,30 @@
+# English translation of order_confirm.yaml (hybrid labeled set + Laya traps),
+# one-to-one and in the same order. `bn` holds the Bangla source so reports can
+# pair each English case with its Bangla original.
+decision: order_confirm_en
+cases:
+  # --- hybrid labeled set ---
+  - { origin: hybrid, bn: "হ্যাঁ", utterance: "Yes", expect: { intent: "yes" } }
+  - { origin: hybrid, bn: "জি", utterance: "Yep", expect: { intent: "yes" } }
+  - { origin: hybrid, bn: "হ্যাঁ ঠিক আছে করে দেন", utterance: "Yes, okay, go ahead", expect: { intent: "yes" } }
+  - { origin: hybrid, bn: "অর্ডারটা কনফার্ম করে দিন", utterance: "Please confirm the order", expect: { intent: "yes" } }
+  - { origin: hybrid, bn: "ঠিক আছে নিয়ে নিন", utterance: "Alright, go ahead with it", expect: { intent: "yes" } }
+  - { origin: hybrid, bn: "আচ্ছা রাখেন", utterance: "Okay, keep it", expect: { intent: "yes" } }
+  - { origin: hybrid, bn: "না", utterance: "No", expect: { intent: "no" } }
+  - { origin: hybrid, bn: "অর্ডারটা বাতিল করে দেন", utterance: "Please cancel the order", expect: { intent: "no" } }
+  - { origin: hybrid, bn: "এখন আর দরকার নেই", utterance: "I don't need it anymore", expect: { intent: "no" } }
+  - { origin: hybrid, bn: "হ্যাঁ লাগবে না", utterance: "Yeah, I don't need it", expect: { intent: "no" } }
+  - { origin: hybrid, bn: "ক্যান্সেল করে দেন", utterance: "Cancel it", expect: { intent: "no" } }
+  - { origin: hybrid, bn: "চাই না", utterance: "I don't want it", expect: { intent: "no" } }
+  - { origin: hybrid, bn: "আবার বলেন", utterance: "Say that again", expect: { intent: "repeat" } }
+  - { origin: hybrid, bn: "কী বললেন বুঝিনি", utterance: "I didn't understand what you said", expect: { intent: "repeat" } }
+  - { origin: hybrid, bn: "আরেকবার বলুন", utterance: "Please say it once more", expect: { intent: "repeat" } }
+  - { origin: hybrid, bn: "ডেলিভারি কখন আসবে", utterance: "When will the delivery come?", expect: { intent: "out_of_scope" } }
+  - { origin: hybrid, bn: "ডেলিভারি ম্যান কি বিকাশে নিবে", utterance: "Will the delivery man take bKash?", expect: { intent: "out_of_scope" } }
+  - { origin: hybrid, bn: "প্রোডাক্টের মান কেমন", utterance: "How is the product quality?", expect: { intent: "out_of_scope" } }
+  # --- Laya traps ---
+  - { bn: "হ্যাঁ হ্যাঁ পাঠিয়ে দেন", utterance: "Yes yes, send it", expect: { intent: "yes" } }
+  - { bn: "না না ঠিক আছে, দিয়ে দেন", utterance: "No no, it's fine, send it", expect: { intent: "yes" } }
+  - { bn: "জি না, এখন নিব না", utterance: "No thanks, I won't take it now", expect: { intent: "no" } }
+  - { bn: "লাইনটা কেটে যাচ্ছিল, আরেকবার বলবেন", utterance: "The line was breaking up, can you say it again?", expect: { intent: "repeat" } }
+  - { bn: "ক্যাশ অন ডেলিভারি হবে তো", utterance: "It will be cash on delivery, right?", expect: { intent: "out_of_scope" } }

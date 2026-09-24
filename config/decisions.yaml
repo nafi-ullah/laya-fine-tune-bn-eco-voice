@@ -1,0 +1,58 @@
+# The three typed decisions Laya is fine-tuned on.
+#
+# `instructions[0]` is the canonical wording used at evaluation / in production.
+# The remaining entries are paraphrases sampled at training time so the model
+# learns the decision, not one exact sentence (upstream anti-leak lesson).
+# Option order is also shuffled per training case.
+
+order_confirm:
+  type: choice
+  # State = conversation list [agent turn, customer turn]. The agent turn is
+  # sampled from these at training time; agent_turns[0] is used at eval.
+  agent_turns:
+    - "আপনার অর্ডারটি কি কনফার্ম করে দেব?"
+    - "তাহলে কি অর্ডারটা কনফার্ম করে দিচ্ছি?"
+    - "অর্ডারটি কি আমরা পাঠিয়ে দেব?"
+    - "আপনি কি অর্ডারটি নিশ্চিত করতে চান?"
+  instructions:
+    - "The agent asked the customer to confirm their order. What does the customer's last reply mean?"
+    - "Classify the customer's answer to the order-confirmation question."
+    - "Does the customer confirm, refuse, ask to hear it again, or ask about something else?"
+  criteria:
+    "yes": "customer agrees and wants the order confirmed"
+    "no": "customer refuses or cancels the order"
+    "repeat": "customer did not hear or understand and wants the agent to say it again"
+    "out_of_scope": "customer asks or says something else, e.g. delivery, payment, price or product"
+
+intent:
+  type: choice
+  instructions:
+    - "What is the customer's intent?"
+    - "Which support intent best describes this customer message?"
+    - "Route this e-commerce customer message to the right intent."
+  criteria:
+    greeting: "says hello or starts the conversation"
+    goodbye: "ends the conversation"
+    thanks: "thanks or praises the service"
+    product_search: "looks for a kind of product to buy"
+    product_availability: "asks whether an item is in stock or available"
+    price_inquiry: "asks the price or cost of an item"
+    order_status: "asks where their order is or what state it is in"
+    order_cancel: "wants to cancel an order"
+    return_refund: "wants to return an item or get money back"
+    shipping_delivery: "asks about delivery time, charge, area or pickup"
+    payment_issue: "has a problem paying or with a payment method"
+    discount_offer: "asks about discounts, coupons or offers"
+    complaint: "is unhappy about a product, order or service"
+    agent_request: "asks to talk to a human agent"
+    out_of_scope: "talks about something unrelated to shopping"
+
+escalate:
+  type: noul
+  instructions:
+    - "This call should be transferred to a human agent."
+    - "A human support agent needs to take over this conversation."
+    - "The customer needs a person, not the automated agent."
+  criteria:
+    "false": "the automated agent can keep handling the customer"
+    "true": "a human agent should take over"

@@ -1,0 +1,53 @@
+# Typed decision schemas sent to Laya. One entry per "question set".
+# Each case in cases/*.yaml names the question set it is scored against
+# (`decision`) and the expected answer for one or more questions (`expect`).
+#
+# Laya question types:
+#   choice → probabilities over named options (criteria may be a dict label→description)
+#   score  → ordered rubric levels, returns expected zero-based level
+#   noul   → P(true) for a proposition
+
+order_confirm:
+  # Mirrors the hybrid DSM ORDER_CONFIRM state (yes / no / repeat / escalate).
+  intent:
+    type: choice
+    instructions: >-
+      A Bangladeshi e-commerce agent just read the customer's order back and asked
+      "Should I confirm this order?". What does the customer's reply mean?
+    criteria:
+      "yes": "customer agrees / confirms the order (হ্যাঁ, জি, ঠিক আছে, কনফার্ম করেন)"
+      "no": "customer refuses or cancels the order (না, লাগবে না, বাতিল, ক্যান্সেল)"
+      "repeat": "customer did not hear or understand and wants it said again (আবার বলেন, বুঝিনি)"
+      "out_of_scope": "customer asks something else: delivery time, payment, product quality, price"
+
+order_confirm_en:
+  # Same question as order_confirm, with English example phrases (for the EN suite).
+  intent:
+    type: choice
+    instructions: >-
+      A Bangladeshi e-commerce agent just read the customer's order back and asked
+      "Should I confirm this order?". What does the customer's reply mean?
+    criteria:
+      "yes": "customer agrees / confirms the order (yes, sure, okay, go ahead, confirm it)"
+      "no": "customer refuses or cancels the order (no, don't need it, cancel it)"
+      "repeat": "customer did not hear or understand and wants it said again (say again, didn't get it)"
+      "out_of_scope": "customer asks something else: delivery time, payment, product quality, price"
+
+ecommerce_router:
+  # Broader inbound-support routing — the use case suggested in the Laya notes.
+  intent:
+    type: choice
+    instructions: What is the customer's intent?
+    criteria:
+      order_status: "where is my order / it has not arrived / delivery time"
+      refund: "wants money back or return"
+      product_question: "asks about a product's price, quality, size, warranty"
+      complaint: "is unhappy about service, damage or wrong item"
+      other: "anything else"
+  escalate:
+    type: noul
+    instructions: Should this call be transferred to a human agent?
+  frustration:
+    type: score
+    instructions: How frustrated is the customer?
+    criteria: ["calm", "mildly annoyed", "angry"]

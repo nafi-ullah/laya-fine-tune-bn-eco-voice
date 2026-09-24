@@ -1,0 +1,637 @@
+{
+  "meta": {
+    "model": "aac6fef/laya-multilingual-mlx",
+    "dtype": "float16",
+    "compile": true,
+    "repeats": 20,
+    "load_s": 0.5655527499984601,
+    "peak_mlx_mb": 788.8147439956665,
+    "rss_mb": 1105.578125,
+    "machine": "arm64 macOS 26.4.1",
+    "timestamp": "2026-09-24T02:11:32"
+  },
+  "suite": "order_confirm",
+  "decision": "order_confirm",
+  "questions": [
+    "intent"
+  ],
+  "rows": [
+    {
+      "utterance": "হ্যাঁ",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "yes"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.0488
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.3151,
+          "no": 0.2661,
+          "repeat": 0.3119,
+          "out_of_scope": 0.107
+        }
+      },
+      "input_tokens": 147,
+      "latency_ms": 9.956499499821803
+    },
+    {
+      "utterance": "জি",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "repeat"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.1422
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.2342,
+          "no": 0.2093,
+          "repeat": 0.4939,
+          "out_of_scope": 0.0626
+        }
+      },
+      "input_tokens": 146,
+      "latency_ms": 9.626563001802424
+    },
+    {
+      "utterance": "হ্যাঁ ঠিক আছে করে দেন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "yes"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.3619
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.7032,
+          "no": 0.0674,
+          "repeat": 0.1816,
+          "out_of_scope": 0.0478
+        }
+      },
+      "input_tokens": 155,
+      "latency_ms": 9.986103999835905
+    },
+    {
+      "utterance": "অর্ডারটা কনফার্ম করে দিন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "yes"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.3316
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.6805,
+          "no": 0.0968,
+          "repeat": 0.1832,
+          "out_of_scope": 0.0395
+        }
+      },
+      "input_tokens": 157,
+      "latency_ms": 9.783624998817686
+    },
+    {
+      "utterance": "ঠিক আছে নিয়ে নিন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.0391
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.2845,
+          "no": 0.3325,
+          "repeat": 0.2595,
+          "out_of_scope": 0.1235
+        }
+      },
+      "input_tokens": 153,
+      "latency_ms": 9.6903960002237
+    },
+    {
+      "utterance": "আচ্ছা রাখেন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.046
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.1968,
+          "no": 0.3669,
+          "repeat": 0.2976,
+          "out_of_scope": 0.1388
+        }
+      },
+      "input_tokens": 152,
+      "latency_ms": 9.838603498792509
+    },
+    {
+      "utterance": "না",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "no"
+      },
+      "pred": {
+        "intent": "repeat"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.1188
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.1244,
+          "no": 0.369,
+          "repeat": 0.4078,
+          "out_of_scope": 0.0988
+        }
+      },
+      "input_tokens": 145,
+      "latency_ms": 10.05883350080694
+    },
+    {
+      "utterance": "অর্ডারটা বাতিল করে দেন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "no"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.1183
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.2046,
+          "no": 0.5051,
+          "repeat": 0.1781,
+          "out_of_scope": 0.1122
+        }
+      },
+      "input_tokens": 155,
+      "latency_ms": 10.06758349831216
+    },
+    {
+      "utterance": "এখন আর দরকার নেই",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "no"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.111
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.137,
+          "no": 0.4896,
+          "repeat": 0.2414,
+          "out_of_scope": 0.132
+        }
+      },
+      "input_tokens": 152,
+      "latency_ms": 10.166000000026543
+    },
+    {
+      "utterance": "হ্যাঁ লাগবে না",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "no"
+      },
+      "pred": {
+        "intent": "yes"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.1911
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.5276,
+          "no": 0.1217,
+          "repeat": 0.2909,
+          "out_of_scope": 0.0598
+        }
+      },
+      "input_tokens": 152,
+      "latency_ms": 9.921979002683656
+    },
+    {
+      "utterance": "ক্যান্সেল করে দেন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "no"
+      },
+      "pred": {
+        "intent": "yes"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.1336
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.4779,
+          "no": 0.145,
+          "repeat": 0.2927,
+          "out_of_scope": 0.0844
+        }
+      },
+      "input_tokens": 151,
+      "latency_ms": 9.821270999964327
+    },
+    {
+      "utterance": "চাই না",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "no"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.2582
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.0859,
+          "no": 0.6325,
+          "repeat": 0.1985,
+          "out_of_scope": 0.0832
+        }
+      },
+      "input_tokens": 147,
+      "latency_ms": 9.78699999905075
+    },
+    {
+      "utterance": "আবার বলেন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "repeat"
+      },
+      "pred": {
+        "intent": "yes"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.149
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.4048,
+          "no": 0.0872,
+          "repeat": 0.4044,
+          "out_of_scope": 0.1036
+        }
+      },
+      "input_tokens": 148,
+      "latency_ms": 9.722416998556582
+    },
+    {
+      "utterance": "কী বললেন বুঝিনি",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "repeat"
+      },
+      "pred": {
+        "intent": "repeat"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.1572
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.3096,
+          "no": 0.1538,
+          "repeat": 0.4787,
+          "out_of_scope": 0.0578
+        }
+      },
+      "input_tokens": 153,
+      "latency_ms": 9.794853995117592
+    },
+    {
+      "utterance": "আরেকবার বলুন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "repeat"
+      },
+      "pred": {
+        "intent": "repeat"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.2024
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.2993,
+          "no": 0.0626,
+          "repeat": 0.5336,
+          "out_of_scope": 0.1046
+        }
+      },
+      "input_tokens": 150,
+      "latency_ms": 11.516229002154432
+    },
+    {
+      "utterance": "ডেলিভারি কখন আসবে",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "out_of_scope"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.0464
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.1304,
+          "no": 0.3687,
+          "repeat": 0.286,
+          "out_of_scope": 0.2149
+        }
+      },
+      "input_tokens": 155,
+      "latency_ms": 9.438375000172528
+    },
+    {
+      "utterance": "ডেলিভারি ম্যান কি বিকাশে নিবে",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "out_of_scope"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.0659
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.1863,
+          "no": 0.4007,
+          "repeat": 0.2916,
+          "out_of_scope": 0.1215
+        }
+      },
+      "input_tokens": 159,
+      "latency_ms": 9.811916497710627
+    },
+    {
+      "utterance": "প্রোডাক্টের মান কেমন",
+      "origin": "hybrid",
+      "expect": {
+        "intent": "out_of_scope"
+      },
+      "pred": {
+        "intent": "repeat"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.097
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.1542,
+          "no": 0.2849,
+          "repeat": 0.4481,
+          "out_of_scope": 0.1128
+        }
+      },
+      "input_tokens": 154,
+      "latency_ms": 10.211125001660548
+    },
+    {
+      "utterance": "হ্যাঁ হ্যাঁ পাঠিয়ে দেন",
+      "origin": "laya",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "repeat"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.0619
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.3277,
+          "no": 0.2407,
+          "repeat": 0.3351,
+          "out_of_scope": 0.0965
+        }
+      },
+      "input_tokens": 155,
+      "latency_ms": 10.176562500419095
+    },
+    {
+      "utterance": "না না ঠিক আছে, দিয়ে দেন",
+      "origin": "laya",
+      "expect": {
+        "intent": "yes"
+      },
+      "pred": {
+        "intent": "yes"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.0893
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.3595,
+          "no": 0.3486,
+          "repeat": 0.2154,
+          "out_of_scope": 0.0765
+        }
+      },
+      "input_tokens": 156,
+      "latency_ms": 10.017916501965374
+    },
+    {
+      "utterance": "জি না, এখন নিব না",
+      "origin": "laya",
+      "expect": {
+        "intent": "no"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.1834
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.1412,
+          "no": 0.4375,
+          "repeat": 0.3823,
+          "out_of_scope": 0.0389
+        }
+      },
+      "input_tokens": 153,
+      "latency_ms": 9.899583496007835
+    },
+    {
+      "utterance": "লাইনটা কেটে যাচ্ছিল, আরেকবার বলবেন",
+      "origin": "laya",
+      "expect": {
+        "intent": "repeat"
+      },
+      "pred": {
+        "intent": "repeat"
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.1435
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.2523,
+          "no": 0.1222,
+          "repeat": 0.5164,
+          "out_of_scope": 0.1091
+        }
+      },
+      "input_tokens": 166,
+      "latency_ms": 11.782874498749152
+    },
+    {
+      "utterance": "ক্যাশ অন ডেলিভারি হবে তো",
+      "origin": "laya",
+      "expect": {
+        "intent": "out_of_scope"
+      },
+      "pred": {
+        "intent": "no"
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.0602
+      },
+      "probabilities": {
+        "intent": {
+          "yes": 0.2311,
+          "no": 0.3522,
+          "repeat": 0.3147,
+          "out_of_scope": 0.102
+        }
+      },
+      "input_tokens": 158,
+      "latency_ms": 9.61562500015134
+    }
+  ],
+  "per_question": {
+    "intent": {
+      "correct": 11,
+      "total": 23
+    }
+  },
+  "yes_no_leaks": [
+    "ঠিক আছে নিয়ে নিন",
+    "আচ্ছা রাখেন",
+    "হ্যাঁ লাগবে না",
+    "ক্যান্সেল করে দেন"
+  ],
+  "latency_ms": {
+    "n": 460,
+    "p50": 9.91,
+    "p95": 11.53,
+    "mean": 10.13,
+    "max": 25.23
+  }
+}

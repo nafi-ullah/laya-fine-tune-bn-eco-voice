@@ -1,0 +1,17 @@
+# English translation of ecommerce_router.yaml, one-to-one and in the same order.
+decision: ecommerce_router
+cases:
+  - { bn: "আমার অর্ডার এখনো আসেনি", utterance: "My order still hasn't arrived", expect: { intent: order_status } }
+  - { bn: "অর্ডারটা কবে ডেলিভারি হবে", utterance: "When will the order be delivered?", expect: { intent: order_status } }
+  - { bn: "পার্সেলটা কোথায় আছে একটু দেখবেন", utterance: "Could you check where the parcel is?", expect: { intent: order_status } }
+  - { bn: "আমি টাকা ফেরত চাই", utterance: "I want my money back", expect: { intent: refund } }
+  - { bn: "প্রোডাক্টটা রিটার্ন করতে চাই, টাকাটা বিকাশে দিয়ে দেন", utterance: "I want to return the product, send the money to my bKash", expect: { intent: refund } }
+  - { bn: "মনিটরটার ওয়ারেন্টি কত দিনের", utterance: "How long is the warranty on the monitor?", expect: { intent: product_question } }
+  - { bn: "এটার দাম কত টাকা", utterance: "How much does this cost?", expect: { intent: product_question } }
+  - { bn: "এই শার্টটা কি XL সাইজে আছে", utterance: "Is this shirt available in XL?", expect: { intent: product_question } }
+  - { bn: "ভাঙা প্রোডাক্ট পাঠিয়েছেন, এটা কী ধরনের সার্ভিস", utterance: "You sent a broken product, what kind of service is this?", expect: { intent: complaint, escalate: true, frustration: 2 } }
+  - { bn: "তিনবার ফোন দিলাম কেউ ধরে না, খুবই বাজে অভিজ্ঞতা", utterance: "I called three times and nobody picked up, terrible experience", expect: { intent: complaint, escalate: true, frustration: 2 } }
+  - { bn: "ভুল কালারের জিনিস এসেছে", utterance: "I received the wrong color", expect: { intent: complaint } }
+  - { bn: "আপনাদের অফিস কয়টায় খোলে", utterance: "What time does your office open?", expect: { intent: other } }
+  - { bn: "মানুষের সাথে কথা বলতে চাই, ম্যানেজারকে দেন", utterance: "I want to talk to a human, give me the manager", expect: { escalate: true } }
+  - { bn: "ধন্যবাদ, সব ঠিক আছে", utterance: "Thanks, everything is fine", expect: { escalate: false, frustration: 0 } }

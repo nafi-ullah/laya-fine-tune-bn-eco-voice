@@ -1,0 +1,22 @@
+# Hugging Face dataset publication (09_export_hf.py → 10_push_hf.py).
+repo_name: bangla-ecom-voice-decisions
+private: true                      # flip to false on the Hub once reviewed
+pretty_name: Bangla E-commerce Voice Agent Decisions
+source:
+  repo: Badhon/BanglaEComIntent
+  url: https://huggingface.co/datasets/Badhon/BanglaEComIntent
+  license: cc-by-nc-sa-4.0
+
+model:
+  repo_name: laya-multilingual-bn-ecom-voice
+  private: true
+  checkpoint: checkpoints/R1          # PyTorch → repo root
+  mlx_checkpoint: checkpoints/R1-mlx  # MLX FP16 → mlx/
+  license: cc-by-nc-sa-4.0            # trained on CC BY-NC-SA data; base weights Apache-2.0, encoder MIT
+  base_model: convaiinnovations/laya-multilingual
+  credits:
+    - {name: "Laya (multilingual)", url: "https://huggingface.co/convaiinnovations/laya-multilingual", license: "Apache-2.0", role: "base checkpoint"}
+    - {name: "Laya source & RLCD training recipe", url: "https://github.com/NandhaKishorM/laya", license: "Apache-2.0", role: "model code, sequence format, fine-tuning recipe"}
+    - {name: "mmBERT-base", url: "https://huggingface.co/jhu-clsp/mmBERT-base", license: "MIT", role: "multilingual encoder inside Laya-multilingual"}
+    - {name: "laya-mlx", url: "https://github.com/mizorewww/laya-mlx", license: "Apache-2.0", role: "MLX conversion + Apple Silicon runtime"}
+    - {name: "BanglaEComIntent", url: "https://huggingface.co/datasets/Badhon/BanglaEComIntent", license: "CC BY-NC-SA 4.0", role: "source intent corpus"}

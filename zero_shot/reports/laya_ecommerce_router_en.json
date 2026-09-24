@@ -1,0 +1,586 @@
+{
+  "meta": {
+    "model": "aac6fef/laya-multilingual-mlx",
+    "dtype": "float16",
+    "compile": false,
+    "repeats": 1,
+    "load_s": 0.6269909999973606,
+    "peak_mlx_mb": 784.157133102417,
+    "rss_mb": 1104.5625,
+    "machine": "arm64 macOS 26.4.1",
+    "timestamp": "2026-09-24T15:49:51"
+  },
+  "suite": "ecommerce_router_en",
+  "decision": "ecommerce_router",
+  "questions": [
+    "intent",
+    "escalate",
+    "frustration"
+  ],
+  "rows": [
+    {
+      "utterance": "My order still hasn't arrived",
+      "origin": "laya",
+      "bn": "আমার অর্ডার এখনো আসেনি",
+      "expect": {
+        "intent": "order_status"
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.9998,
+        "escalate": 0.9958,
+        "frustration": 0.1527
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 1.0,
+          "refund": 0.0,
+          "product_question": 0.0,
+          "complaint": 0.0,
+          "other": 0.0
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.1054,
+          "1": 0.5548,
+          "2": 0.3397
+        }
+      },
+      "input_tokens": 164,
+      "latency_ms": 11.816208003438078
+    },
+    {
+      "utterance": "When will the order be delivered?",
+      "origin": "laya",
+      "bn": "অর্ডারটা কবে ডেলিভারি হবে",
+      "expect": {
+        "intent": "order_status"
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.6449,
+        "escalate": 0.9977,
+        "frustration": 0.0918
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.8678,
+          "refund": 0.0296,
+          "product_question": 0.0282,
+          "complaint": 0.0306,
+          "other": 0.0438
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.2432,
+          "1": 0.5508,
+          "2": 0.2059
+        }
+      },
+      "input_tokens": 164,
+      "latency_ms": 11.720666996552609
+    },
+    {
+      "utterance": "Could you check where the parcel is?",
+      "origin": "laya",
+      "bn": "পার্সেলটা কোথায় আছে একটু দেখবেন",
+      "expect": {
+        "intent": "order_status"
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.9964,
+        "escalate": 0.9984,
+        "frustration": 0.1354
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.9994,
+          "refund": 0.0001,
+          "product_question": 0.0001,
+          "complaint": 0.0,
+          "other": 0.0004
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.2907,
+          "1": 0.573,
+          "2": 0.1363
+        }
+      },
+      "input_tokens": 167,
+      "latency_ms": 11.870207992615178
+    },
+    {
+      "utterance": "I want my money back",
+      "origin": "laya",
+      "bn": "আমি টাকা ফেরত চাই",
+      "expect": {
+        "intent": "refund"
+      },
+      "pred": {
+        "intent": "refund",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.9989,
+        "escalate": 0.9778,
+        "frustration": 0.0845
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.0001,
+          "refund": 0.9998,
+          "product_question": 0.0,
+          "complaint": 0.0,
+          "other": 0.0
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.1573,
+          "1": 0.4965,
+          "2": 0.3462
+        }
+      },
+      "input_tokens": 158,
+      "latency_ms": 12.376874990877695
+    },
+    {
+      "utterance": "I want to return the product, send the money to my bKash",
+      "origin": "laya",
+      "bn": "প্রোডাক্টটা রিটার্ন করতে চাই, টাকাটা বিকাশে দিয়ে দেন",
+      "expect": {
+        "intent": "refund"
+      },
+      "pred": {
+        "intent": "refund",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.9919,
+        "escalate": 0.9977,
+        "frustration": 0.0788
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.0003,
+          "refund": 0.9985,
+          "product_question": 0.0001,
+          "complaint": 0.0006,
+          "other": 0.0005
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.1996,
+          "1": 0.5295,
+          "2": 0.2709
+        }
+      },
+      "input_tokens": 185,
+      "latency_ms": 13.566499997978099
+    },
+    {
+      "utterance": "How long is the warranty on the monitor?",
+      "origin": "laya",
+      "bn": "মনিটরটার ওয়ারেন্টি কত দিনের",
+      "expect": {
+        "intent": "product_question"
+      },
+      "pred": {
+        "intent": "product_question",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": true
+      },
+      "confidence": {
+        "intent": 0.2581,
+        "escalate": 0.9999,
+        "frustration": 0.0453
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.1349,
+          "refund": 0.1153,
+          "product_question": 0.6026,
+          "complaint": 0.0415,
+          "other": 0.1056
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.3159,
+          "1": 0.47,
+          "2": 0.2141
+        }
+      },
+      "input_tokens": 170,
+      "latency_ms": 13.279917009640485
+    },
+    {
+      "utterance": "How much does this cost?",
+      "origin": "laya",
+      "bn": "এটার দাম কত টাকা",
+      "expect": {
+        "intent": "product_question"
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.6121,
+        "escalate": 0.9827,
+        "frustration": 0.0955
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.8237,
+          "refund": 0.1158,
+          "product_question": 0.0213,
+          "complaint": 0.0014,
+          "other": 0.0378
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.1975,
+          "1": 0.5539,
+          "2": 0.2487
+        }
+      },
+      "input_tokens": 161,
+      "latency_ms": 13.052542009972967
+    },
+    {
+      "utterance": "Is this shirt available in XL?",
+      "origin": "laya",
+      "bn": "এই শার্টটা কি XL সাইজে আছে",
+      "expect": {
+        "intent": "product_question"
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.937,
+        "escalate": 1.0,
+        "frustration": 0.0712
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.9839,
+          "refund": 0.0072,
+          "product_question": 0.0044,
+          "complaint": 0.0006,
+          "other": 0.004
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.159,
+          "1": 0.4351,
+          "2": 0.4059
+        }
+      },
+      "input_tokens": 164,
+      "latency_ms": 13.818291001371108
+    },
+    {
+      "utterance": "You sent a broken product, what kind of service is this?",
+      "origin": "laya",
+      "bn": "ভাঙা প্রোডাক্ট পাঠিয়েছেন, এটা কী ধরনের সার্ভিস",
+      "expect": {
+        "intent": "complaint",
+        "escalate": true,
+        "frustration": 2
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": false,
+        "escalate": false,
+        "frustration": false
+      },
+      "confidence": {
+        "intent": 0.5654,
+        "escalate": 0.9979,
+        "frustration": 0.0958
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.7919,
+          "refund": 0.1329,
+          "product_question": 0.0054,
+          "complaint": 0.0574,
+          "other": 0.0123
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.159,
+          "1": 0.5277,
+          "2": 0.3133
+        }
+      },
+      "input_tokens": 182,
+      "latency_ms": 15.693374996772036
+    },
+    {
+      "utterance": "I called three times and nobody picked up, terrible experience",
+      "origin": "laya",
+      "bn": "তিনবার ফোন দিলাম কেউ ধরে না, খুবই বাজে অভিজ্ঞতা",
+      "expect": {
+        "intent": "complaint",
+        "escalate": true,
+        "frustration": 2
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": false,
+        "escalate": false,
+        "frustration": false
+      },
+      "confidence": {
+        "intent": 0.9235,
+        "escalate": 0.8425,
+        "frustration": 0.1712
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.979,
+          "refund": 0.0117,
+          "product_question": 0.0003,
+          "complaint": 0.0063,
+          "other": 0.0027
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.1226,
+          "1": 0.6113,
+          "2": 0.2661
+        }
+      },
+      "input_tokens": 176,
+      "latency_ms": 16.69291600410361
+    },
+    {
+      "utterance": "I received the wrong color",
+      "origin": "laya",
+      "bn": "ভুল কালারের জিনিস এসেছে",
+      "expect": {
+        "intent": "complaint"
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.9736,
+        "escalate": 0.9978,
+        "frustration": 0.1487
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.9942,
+          "refund": 0.0019,
+          "product_question": 0.0002,
+          "complaint": 0.0012,
+          "other": 0.0025
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.1686,
+          "1": 0.6102,
+          "2": 0.2212
+        }
+      },
+      "input_tokens": 158,
+      "latency_ms": 15.093916998011991
+    },
+    {
+      "utterance": "What time does your office open?",
+      "origin": "laya",
+      "bn": "আপনাদের অফিস কয়টায় খোলে",
+      "expect": {
+        "intent": "other"
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "intent": false
+      },
+      "confidence": {
+        "intent": 0.4603,
+        "escalate": 0.8369,
+        "frustration": 0.1831
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.7127,
+          "refund": 0.0446,
+          "product_question": 0.0233,
+          "complaint": 0.0206,
+          "other": 0.1989
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.0994,
+          "1": 0.5998,
+          "2": 0.3007
+        }
+      },
+      "input_tokens": 164,
+      "latency_ms": 15.295958000933751
+    },
+    {
+      "utterance": "I want to talk to a human, give me the manager",
+      "origin": "laya",
+      "bn": "মানুষের সাথে কথা বলতে চাই, ম্যানেজারকে দেন",
+      "expect": {
+        "escalate": true
+      },
+      "pred": {
+        "intent": "refund",
+        "escalate": true,
+        "frustration": 1
+      },
+      "ok": {
+        "escalate": true
+      },
+      "confidence": {
+        "intent": 0.5454,
+        "escalate": 0.9793,
+        "frustration": 0.0812
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.1072,
+          "refund": 0.7976,
+          "product_question": 0.0106,
+          "complaint": 0.0294,
+          "other": 0.0553
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.1804,
+          "1": 0.5213,
+          "2": 0.2982
+        }
+      },
+      "input_tokens": 179,
+      "latency_ms": 15.240041990182362
+    },
+    {
+      "utterance": "Thanks, everything is fine",
+      "origin": "laya",
+      "bn": "ধন্যবাদ, সব ঠিক আছে",
+      "expect": {
+        "escalate": false,
+        "frustration": 0
+      },
+      "pred": {
+        "intent": "order_status",
+        "escalate": false,
+        "frustration": 1
+      },
+      "ok": {
+        "escalate": true,
+        "frustration": false
+      },
+      "confidence": {
+        "intent": 0.9803,
+        "escalate": 0.9345,
+        "frustration": 0.1107
+      },
+      "probabilities": {
+        "intent": {
+          "order_status": 0.9957,
+          "refund": 0.002,
+          "product_question": 0.0001,
+          "complaint": 0.0002,
+          "other": 0.002
+        },
+        "escalate": null,
+        "frustration": {
+          "0": 0.4535,
+          "1": 0.426,
+          "2": 0.1204
+        }
+      },
+      "input_tokens": 158,
+      "latency_ms": 14.160749997245148
+    }
+  ],
+  "per_question": {
+    "intent": {
+      "correct": 6,
+      "total": 12
+    },
+    "escalate": {
+      "correct": 2,
+      "total": 4
+    },
+    "frustration": {
+      "correct": 0,
+      "total": 3
+    }
+  },
+  "yes_no_leaks": [],
+  "latency_ms": {
+    "n": 14,
+    "p50": 13.69,
+    "p95": 16.04,
+    "mean": 13.83,
+    "max": 16.69
+  }
+}

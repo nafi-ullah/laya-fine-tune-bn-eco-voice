@@ -1,0 +1,24 @@
+# Secrets
+.env
+
+# Large / licensed artefacts: data is CC BY-NC-SA (pull it with `make pull`), weights live on the Hub
+data/raw/
+data/cache/
+data/build/
+data/hf_export/
+data/hf_model/
+data/*.log
+checkpoints/
+dist/
+*.pt
+*.safetensors
+
+# Python
+.venv*/
+__pycache__/
+*.pyc
+.DS_Store
+data/extra/
+
+# Personal scratch notes
+draft.md

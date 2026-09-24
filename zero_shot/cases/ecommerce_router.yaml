@@ -1,0 +1,19 @@
+# Bangla inbound-support utterances for the broader router decision.
+# `expect.intent` is scored; `expect.escalate` (bool) and `expect.frustration`
+# (0..2) are scored when present.
+decision: ecommerce_router
+cases:
+  - { utterance: "আমার অর্ডার এখনো আসেনি", expect: { intent: order_status } }
+  - { utterance: "অর্ডারটা কবে ডেলিভারি হবে", expect: { intent: order_status } }
+  - { utterance: "পার্সেলটা কোথায় আছে একটু দেখবেন", expect: { intent: order_status } }
+  - { utterance: "আমি টাকা ফেরত চাই", expect: { intent: refund } }
+  - { utterance: "প্রোডাক্টটা রিটার্ন করতে চাই, টাকাটা বিকাশে দিয়ে দেন", expect: { intent: refund } }
+  - { utterance: "মনিটরটার ওয়ারেন্টি কত দিনের", expect: { intent: product_question } }
+  - { utterance: "এটার দাম কত টাকা", expect: { intent: product_question } }
+  - { utterance: "এই শার্টটা কি XL সাইজে আছে", expect: { intent: product_question } }
+  - { utterance: "ভাঙা প্রোডাক্ট পাঠিয়েছেন, এটা কী ধরনের সার্ভিস", expect: { intent: complaint, escalate: true, frustration: 2 } }
+  - { utterance: "তিনবার ফোন দিলাম কেউ ধরে না, খুবই বাজে অভিজ্ঞতা", expect: { intent: complaint, escalate: true, frustration: 2 } }
+  - { utterance: "ভুল কালারের জিনিস এসেছে", expect: { intent: complaint } }
+  - { utterance: "আপনাদের অফিস কয়টায় খোলে", expect: { intent: other } }
+  - { utterance: "মানুষের সাথে কথা বলতে চাই, ম্যানেজারকে দেন", expect: { escalate: true } }
+  - { utterance: "ধন্যবাদ, সব ঠিক আছে", expect: { escalate: false, frustration: 0 } }

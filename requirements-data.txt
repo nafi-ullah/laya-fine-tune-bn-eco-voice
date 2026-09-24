@@ -1,0 +1,12 @@
+# Data pipeline. LLM = Gemini API (httpx); laya-mlx is for benchmarking on Apple Silicon.
+httpx>=0.27
+datasets>=3.0
+pandas>=2.2
+pyarrow>=18
+pyyaml>=6
+jsonschema>=4.23
+sentence-transformers>=3.0
+huggingface-hub>=0.34
+python-dotenv>=1.0
+laya-mlx==0.2.0
+psutil>=5.9

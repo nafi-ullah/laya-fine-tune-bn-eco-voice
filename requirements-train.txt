@@ -1,0 +1,8 @@
+# Training (Mac MPS or Colab CUDA). Upstream Laya PyTorch package provides the model + RLCD helpers.
+laya==0.3.11
+torch>=2.4
+transformers>=4.48
+safetensors>=0.4
+huggingface-hub>=0.34
+pyyaml>=6
+numpy>=1.26

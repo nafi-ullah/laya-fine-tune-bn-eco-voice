@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Per-sentence LLM output, one schema per pass",
+  "$defs": {
+    "translit": {
+      "description": "compact row: [id, bangla_text]",
+      "type": "array",
+      "prefixItems": [{"type": "integer"}, {"type": "string", "minLength": 1, "maxLength": 300}],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "label": {
+      "description": "compact row: [id, intent, alt_intent|null, escalate]",
+      "type": "array",
+      "prefixItems": [
+        {"type": "integer"},
+        {"type": "string"},
+        {"type": ["string", "null"]},
+        {"enum": [0, 1]}
+      ],
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "confirm_gen": {
+      "type": "object",
+      "required": ["utterances"],
+      "properties": {
+        "utterances": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1, "maxLength": 120}
+        }
+      }
+    }
+  }
+}

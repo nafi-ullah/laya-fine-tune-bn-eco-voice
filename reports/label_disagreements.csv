@@ -1,0 +1,627 @@
+row_id,text,dataset_intent,llm_intent,llm_alt,script
+validation-124,এই বিষয়টা উপরে জানান ধন্যবাদ,agent_request,complaint,agent_request,bn
+train-2295,delivered dekhacche kintu painai,order_status,shipping_delivery,order_status,bl
+train-605,tin din hoye gelo ekhono pai নাই,order_status,shipping_delivery,order_status,mx
+validation-397,hey failed thanks,payment_issue,thanks,,en
+train-4588,Headphone ache ki,product_search,product_availability,,bl
+train-219,whatsh new,product_search,discount_offer,,en
+train-226,কবে পাবো একটু,order_status,shipping_delivery,,bn
+train-251,ভাই স্যার আছেন,greeting,agent_request,,bn
+train-254,আপা আছেন কি?,greeting,agent_request,,bn
+train-275,assalamu alaikum vai ar ki ache,product_search,greeting,product_search,bl
+train-276,laptop ache ki .,product_search,product_availability,,bl
+train-167,ভাই কি দয়া করে,out_of_scope,greeting,agent_request,bn
+train-169,why is it takng so long,complaint,shipping_delivery,complaint,en
+train-183,code boshale kaj kure na keno,discount_offer,payment_issue,discount_offer,bl
+train-187,শুনেন শীতের জন্য ল্যাপটপ আছে,product_search,product_availability,,bn
+train-189,coupon kaj korche না,discount_offer,payment_issue,discount_offer,mx
+train-192,ভাই সাহেব আছেন,greeting,agent_request,,bn
+train-196,koto টাকা ogrim দিতে hobe,shipping_delivery,price_inquiry,payment_issue,mx
+train-27,still there,product_availability,greeting,,en
+train-33,cash on delivery ache কি,shipping_delivery,payment_issue,shipping_delivery,mx
+train-36,charge koto,shipping_delivery,price_inquiry,,bl
+train-39,What is new in your store,product_search,discount_offer,product_search,en
+train-294,tin din hoye gelo ekhno pai nai,order_status,shipping_delivery,order_status,bl
+train-303,আচ্ছা তিন দিন হয়ে গেল এখনো পেলাম না,order_status,shipping_delivery,order_status,bn
+train-321,Not needed,order_cancel,out_of_scope,,en
+train-103,tin din hoye gelo ekhono pai nai??,order_status,shipping_delivery,order_status,bl
+train-57,দেখান কিছু রিপ্লাই দিবেন প্লিজ,product_search,agent_request,product_search,bn
+train-65,can i pay when i receive it thanks in advance,shipping_delivery,payment_issue,thanks,en
+train-136,একটু খবর কি,order_status,greeting,,bn
+train-147,are you a robot,out_of_scope,agent_request,,en
+train-150,ok do you have punjabi,product_search,product_availability,product_search,en
+train-152,accha aro ektu kom rakha jay na apu,discount_offer,price_inquiry,,bl
+train-323,kal abar ashbo,goodbye,greeting,,bl
+train-326,কবে pabo,order_status,shipping_delivery,order_status,mx
+train-361,"অনেকদিন অপেক্ষা করছি, কুপন কাজ করছে না",discount_offer,complaint,discount_offer,bn
+train-417,ache,product_availability,out_of_scope,,bl
+train-418,Whats new,product_search,discount_offer,,en
+train-420,ভাই ভাই সাহেব আছেন প্লিজ,greeting,agent_request,,bn
+train-428,শাড়ি আছে কি,product_search,product_availability,,bn
+train-447,good morning browse your power bank collection,product_search,greeting,product_search,en
+train-448,what else??,product_search,out_of_scope,,en
+train-454,onnokichu,product_search,out_of_scope,,bl
+train-464,panjabi ache ki??,product_search,product_availability,,bl
+train-480,accha hi ache keu vai,greeting,agent_request,greeting,bl
+train-383,ক্যাশ অন ডেলিভারি আছে কি,shipping_delivery,product_availability,,bn
+train-385,Coupon kaj korche na,discount_offer,payment_issue,discount_offer,bl
+train-392,এখন অর্ডার করলে পাবো,product_availability,shipping_delivery,order_status,bn
+train-483,"i have been waiting a while, done",goodbye,complaint,,en
+train-493,anything elshe,product_search,out_of_scope,,en
+train-499,সালাম লাগবে না,order_cancel,greeting,,bn
+train-502,হ্যালো ভাই কথা বলা যাবে .,greeting,agent_request,greeting,bn
+train-536,hey can we talk??,greeting,agent_request,,en
+train-543,vai keu achen,greeting,agent_request,,bl
+train-547,sale er somoy dam koto hobe,discount_offer,price_inquiry,discount_offer,bl
+train-550,শুনেন কোড বসালে কাজ করে না কেন,discount_offer,payment_issue,discount_offer,bn
+train-559,pathabn na ar,order_cancel,shipping_delivery,order_cancel,bl
+train-604,lal culor e ache,product_availability,product_search,,bl
+train-606,আচ্ছা ফেইল,payment_issue,complaint,payment_issue,bn
+train-612,if i order now will i get it,product_availability,shipping_delivery,product_availability,en
+train-630,Kalker order aj pabo to,order_status,shipping_delivery,order_status,bl
+train-591,কেউ কি অনলাইনে আছেন প্লিজ,greeting,agent_request,,bn
+train-595,errur,payment_issue,complaint,payment_issue,bl
+train-644,kotha bula jabe,greeting,agent_request,,bl
+train-669,Delivery charge koto,shipping_delivery,price_inquiry,shipping_delivery,bl
+train-675,aro ektu kom rakhajay na,discount_offer,price_inquiry,,bl
+train-709,tin din hoye gelo ekhono pai nai,order_status,shipping_delivery,order_status,bl
+train-711,alright thanks goodbye,goodbye,thanks,goodbye,en
+train-718,fail,payment_issue,complaint,,bl
+train-724,একটু হ্যালো ভাই কথা বলা যাবে,greeting,agent_request,greeting,bn
+train-731,eto deri keno hocche,complaint,shipping_delivery,complaint,bl
+train-762,What is your name,out_of_scope,greeting,,en
+train-864,একটু কাল কি ছুটি আছে প্লিজ,out_of_scope,shipping_delivery,,bn
+train-809,which one is yuur best,product_search,out_of_scope,,en
+train-815,প্যাকেট ছেঁড়া অবস্থায় এসেছে প্লিজ,complaint,return_refund,complaint,bn
+train-816,it brke on the very first day,complaint,return_refund,complaint,en
+train-817,এত দেরি কেন হচ্ছে প্লিজ,complaint,shipping_delivery,complaint,bn
+train-820,"ami ekhane notun tai ektu help korun, shob bujhe gechi rakhi",goodbye,greeting,,bl
+train-823,Fail,payment_issue,complaint,,bl
+train-827,ভাই ভাই সাহেব আছেন,greeting,agent_request,,bn
+train-829,Vai saheb achen,greeting,agent_request,,bl
+train-831,কালকে পাবো তো এটা??,product_availability,shipping_delivery,,bn
+train-836,শুনেন ল্যাপটপ আছে কি একটু,product_search,product_availability,,bn
+train-837,আচ্ছা কি বললেন বুঝলাম না কিছুই,out_of_scope,complaint,,bn
+train-839,What will the sale price be,discount_offer,price_inquiry,discount_offer,en
+train-885,cas on delivery ache ki,shipping_delivery,payment_issue,,bl
+train-895,excuse me i received a damaged item sir,complaint,return_refund,complaint,en
+train-913,kothai,order_status,shipping_delivery,order_status,bl
+train-930,আপনারা কি খোলা আছেন এখন??,greeting,out_of_scope,,bn
+train-932,kal kichuti ache,out_of_scope,order_status,,bl
+train-941,beshi nile kom rakhben ki,discount_offer,price_inquiry,discount_offer,bl
+train-948,ভাই একটু শুনবেন দয়া করে,greeting,agent_request,,bn
+train-949,"my friend suggested your page, is the small size free",product_availability,price_inquiry,,en
+train-967,ar lagbe nabad din,order_cancel,goodbye,,bl
+train-987,khubbaje,complaint,out_of_scope,,bl
+train-993,আজ পাবো কি প্লিজ,order_status,shipping_delivery,order_status,bn
+train-999,ভাই ফ্রি ডেলিভারি কত টাকার অর্ডারে প্লিজ,shipping_delivery,discount_offer,,bn
+train-1008,i rceived a damaged item,complaint,return_refund,complaint,en
+train-1027,delivered dekhacche kntu pai nai,order_status,shipping_delivery,complaint,bl
+train-1034,apu acen ki,greeting,agent_request,,bl
+train-1042,আপা আছেন কি প্লিজ,greeting,agent_request,,bn
+train-1125,anycode,discount_offer,out_of_scope,,en
+train-1134,শুভ সকাল কোড,discount_offer,greeting,,bn
+train-1151,Got any,product_availability,product_search,,en
+train-1152,kube pabo,order_status,shipping_delivery,,bl
+train-1189,কত টাকা অগ্রিম দিতে হবে একটু,shipping_delivery,payment_issue,,bn
+train-1201,how far ismy parcel,order_status,shipping_delivery,order_status,en
+train-1237,sale er somoy dam koto hobe agei dhonnobad,discount_offer,price_inquiry,discount_offer,bl
+train-1247,are you a human,out_of_scope,agent_request,,en
+train-1267,তিন দিন হয়ে গেল এখনো পেলাম না,order_status,shipping_delivery,order_status,bn
+train-1271,Beshi nile kom rakhben ki,discount_offer,price_inquiry,discount_offer,bl
+train-1046,where,order_status,out_of_scope,,en
+train-1048,কিছু না দয়া করে,out_of_scope,goodbye,,bn
+train-1060,"অনেকদিন অপেক্ষা করছি, পাঞ্জাবি আছে কি",product_search,product_availability,,bn
+train-1082,apu achen ki,greeting,agent_request,,bl
+train-1091,laptop ace ki,product_search,product_availability,,bl
+train-1110,দাম কি একটু কমানো যায় দয়া করে,price_inquiry,discount_offer,price_inquiry,bn
+train-1118,Anything new for eid,product_search,discount_offer,product_search,en
+train-1293,দেখা হবে??,goodbye,out_of_scope,,bn
+train-1294,keu achen,greeting,agent_request,,bl
+train-1298,cosht,price_inquiry,out_of_scope,,en
+train-1306,nice??,thanks,out_of_scope,,en
+train-1309,ektu hotash ektu,complaint,out_of_scope,,bl
+train-1321,Still there,product_availability,agent_request,,en
+train-1370,পাঞ্জাবি আছে কি,product_search,product_availability,product_search,bn
+train-1373,আরো একটু kom rakha jay na,discount_offer,price_inquiry,discount_offer,mx
+train-1379,headphone ace ki,product_search,product_availability,,bl
+train-1405,assalamu alaikum you are just holding my money,complaint,payment_issue,complaint,en
+train-1407,আচ্ছা শুনছেন আমার কথা,greeting,agent_request,,bn
+train-1539,ok rate asap,price_inquiry,agent_request,,en
+train-1544,it sais delivered but i did not get it,order_status,shipping_delivery,complaint,en
+train-1565,is cash ondelivery available,shipping_delivery,payment_issue,,en
+train-1328,একটু শুভ রাত্রি ভাই একটু,goodbye,greeting,,bn
+train-1333,cash on delivery আছে ki,shipping_delivery,payment_issue,product_availability,mx
+train-1335,কি বললেন বুঝলাম না কিছুই?,out_of_scope,complaint,,bn
+train-1337,kotha bola jabe,greeting,agent_request,,bl
+train-1346,আচ্ছা হ্যালো ভাই কথা বলা যাবে প্লিজ,greeting,agent_request,,bn
+train-1494,ok what is this please,complaint,product_search,,en
+train-1500,কোড,discount_offer,product_search,,bn
+train-1516,do you have punjabi,product_search,product_availability,,en
+train-1522,kothay,order_status,product_search,,bl
+train-1568,কথা বলতে পারি প্লিজ,greeting,agent_request,,bn
+train-1574,eto deri kenu hocche,complaint,shipping_delivery,complaint,bl
+train-1577,এটা কি বন্ধ করে দিয়েছেন,product_availability,order_status,,bn
+train-1421,ki bollen bujhlam না kichui,out_of_scope,complaint,,mx
+train-1428,আচ্ছা অন্য কিছু একটু,product_search,out_of_scope,,bn
+train-1436,একটু কবে পাবো ভাই,order_status,shipping_delivery,,bn
+train-1445,আমি গত সপ্তাহে আপনাদের থেকে অর্ডার করেছিলাম আর তুমি কি আমাকে ভালোবাসো,out_of_scope,order_status,out_of_scope,bn
+train-1447,পরে জানাবো ভাই,goodbye,out_of_scope,,bn
+train-1449,ekhuno opekkha korchi jinis ta kothay,order_status,shipping_delivery,order_status,bl
+train-1451,কি বললেন বুঝলাম না কিছুই,out_of_scope,complaint,,bn
+train-1464,কালকের অর্ডার আজ পাবো তো,order_status,shipping_delivery,order_status,bn
+train-1473,the item does not match the picture??,complaint,return_refund,complaint,en
+train-1475,keu acen,greeting,agent_request,,bl
+train-1486,chrge koto,shipping_delivery,price_inquiry,shipping_delivery,bl
+train-1739,একটু কালকের অর্ডার আজ পাবো তো,order_status,shipping_delivery,order_status,bn
+train-1746,Show more,product_search,out_of_scope,,en
+train-1751,হ্যালো কেউ কি আছেন দয়া করে,greeting,agent_request,,bn
+train-1758,shob valu to,greeting,out_of_scope,,bl
+train-1760,gotany,product_availability,out_of_scope,,en
+train-1653,i received a damaged item,complaint,return_refund,complaint,en
+train-1660,Is cash on delivery available,shipping_delivery,product_availability,shipping_delivery,en
+train-1671,it broke on the very first day,complaint,return_refund,complaint,en
+train-1689,কে তুমি ভাই,out_of_scope,greeting,,bn
+train-1691,শুনেন আছেন দয়া করে,greeting,agent_request,,bn
+train-1695,এখন অর্ডার করলে পাবো??,product_availability,shipping_delivery,product_availability,bn
+train-1696,আপা আছেন কি,greeting,agent_request,greeting,bn
+train-1700,হ্যালো ভাই কথা বলা যাবে,greeting,agent_request,,bn
+train-1711,sale er somy dam koto hobe,discount_offer,price_inquiry,discount_offer,bl
+train-1722,salam notun kichu,product_search,greeting,product_search,bl
+train-1769,eta ki shsh hoye gache,product_availability,order_status,,bl
+train-1775,My coupon is not working,discount_offer,payment_issue,discount_offer,en
+train-1777,Can i pay when i receive it,shipping_delivery,payment_issue,,en
+train-1786,ok tahule,goodbye,thanks,,bl
+train-1799,the culour bled on the first wash,complaint,return_refund,complaint,en
+train-1801,Ekhono opekkha korchi jinis ta kothay,order_status,shipping_delivery,order_status,bl
+train-1848,একটু ১২৩৪৫৬,out_of_scope,order_status,,bn
+train-1861,একটু চার্জ কত,shipping_delivery,price_inquiry,,bn
+train-1865,accha koto taka ogrim dite hobe apu,shipping_delivery,payment_issue,price_inquiry,bl
+train-1910,সবচেয়ে কম দামি কোনটা??,price_inquiry,product_search,price_inquiry,bn
+train-1915,done,goodbye,thanks,,en
+train-1921,হ্যালো কেউ কি আছেন,greeting,agent_request,,bn
+train-1926,couponkaj korche na,discount_offer,payment_issue,discount_offer,bl
+train-1927,ok tahole,goodbye,thanks,,bl
+train-1812,ডেলিভারি হয়ে গেছে দেখাচ্ছে কিন্তু পাইনি .,order_status,shipping_delivery,complaint,bn
+train-1813,excuse me will i get it today,order_status,shipping_delivery,,en
+train-1816,একটু কুপন কাজ করছে না,discount_offer,payment_issue,discount_offer,bn
+train-1818,ক্যাশ অন ডেলিভারি আছে কি?,shipping_delivery,payment_issue,,bn
+train-1825,so cant you make it a bit less please,discount_offer,price_inquiry,,en
+train-1843,eto deri keno hocche vai,complaint,shipping_delivery,complaint,bl
+train-2013,একটু এত দেরি কেন হচ্ছে,complaint,shipping_delivery,complaint,bn
+train-2028,where is my package stuck??,order_status,shipping_delivery,order_status,en
+train-2042,Done,goodbye,thanks,,en
+train-1973,so why is it taking so long,complaint,shipping_delivery,complaint,en
+train-1988,ok free delivery above how much thanks,shipping_delivery,discount_offer,shipping_delivery,en
+train-1994,স্যার আছেন,greeting,agent_request,,bn
+train-2053,ki bollen bujhlam na kichui,out_of_scope,agent_request,,bl
+train-2058,delivered dekhacche kintu pai nai,order_status,shipping_delivery,complaint,bl
+train-2063,kobe পাবো amar order,order_status,shipping_delivery,,mx
+train-2072,একটু সময় হবে আপনার?,greeting,agent_request,,bn
+train-2092,ashi,goodbye,greeting,,bl
+train-2093,hi আছে keu,greeting,agent_request,greeting,mx
+train-2098,chhr,discount_offer,out_of_scope,,bl
+train-2106,er cheie sosta kichu ache,price_inquiry,product_search,price_inquiry,bl
+train-2117,showmore,product_search,out_of_scope,,en
+train-2119,If i order now will i get it,product_availability,shipping_delivery,,en
+train-2211,sale ersomoy dam koto hobe,discount_offer,price_inquiry,discount_offer,bl
+train-2222,ভাই হ্যালো কেউ কি আছেন,greeting,agent_request,,bn
+train-2224,Vai online achen,greeting,agent_request,,bl
+train-2135,কত টাকা অগ্রিম দিতে হবে,shipping_delivery,payment_issue,price_inquiry,bn
+train-2138,ok tahole?,goodbye,greeting,,bl
+train-2154,koto taka ogrimdite hobe,shipping_delivery,payment_issue,,bl
+train-2155,hey what asap,out_of_scope,shipping_delivery,,en
+train-2163,Will i get it today,order_status,shipping_delivery,,en
+train-1931,if i order now will i get it?,product_availability,shipping_delivery,order_status,en
+train-1942,kthay,order_status,out_of_scope,,bl
+train-1943,একটু আপা আছেন কি,greeting,agent_request,,bn
+train-1948,শুনেন কম দামে ভালো কিছু দেখান,product_search,price_inquiry,product_search,bn
+train-2184,monei back,return_refund,goodbye,,en
+train-2202,এটা কি বন্ধ করে দিয়েছেন একটু,product_availability,order_cancel,order_status,bn
+train-2206,i received a damaged item?,complaint,return_refund,complaint,en
+train-2289,সেলের সময় দাম কত হবে,discount_offer,price_inquiry,discount_offer,bn
+train-2398,আজ পাবো কি??,order_status,shipping_delivery,order_status,bn
+train-2404,eto দেরি keno hocche,complaint,shipping_delivery,complaint,mx
+train-2330,the item does not match the picture,complaint,return_refund,complaint,en
+train-2332,Eto deri keno hocche,complaint,shipping_delivery,complaint,bl
+train-2337,ফেইল প্লিজ,payment_issue,complaint,,bn
+train-2358,are you open right now,greeting,out_of_scope,,en
+train-2360,will i get it tody,order_status,shipping_delivery,,en
+train-2498,আচ্ছা কালকে পাবো তো এটা প্লিজ,product_availability,shipping_delivery,,bn
+train-2499,কেউ কি অনলাইনে আছেন,greeting,agent_request,,bn
+train-2511,ekhon order korle pabo,product_availability,shipping_delivery,,bl
+train-2514,Shipping cost koto,shipping_delivery,price_inquiry,,bl
+train-2520,ei bishoy ta upore janan bhai,agent_request,complaint,agent_request,bl
+train-2522,কুরিয়ার চার্জ কে দিবে??,shipping_delivery,price_inquiry,shipping_delivery,bn
+train-2411,i ordered from you last week and going offline now,goodbye,order_status,,en
+train-2249,amar mal ta kothay atke ache .,order_status,shipping_delivery,order_status,bl
+train-2257,apatoto etukui?,goodbye,out_of_scope,,bl
+train-2267,delivered dekhacche কিন্তু pai nai,order_status,shipping_delivery,complaint,mx
+train-2269,sorry to bother you but is cash on delivery available,shipping_delivery,payment_issue,product_availability,en
+train-2273,sent bymistake,out_of_scope,order_cancel,,en
+train-2284,amar mal ta kothay atke আছে,order_status,shipping_delivery,order_status,mx
+train-2286,পার্সেল হাতে পেয়ে টাকা দিবো একটু,shipping_delivery,payment_issue,shipping_delivery,bn
+train-2454,"my friend suggested your page, that will be all",goodbye,thanks,,en
+train-2456,একটু পাঞ্জাবি আছে কি ভাই,product_search,product_availability,product_search,bn
+train-2458,so is the small size free bro,product_availability,price_inquiry,discount_offer,en
+train-2549,hey you are just holding my money asap,complaint,payment_issue,complaint,en
+train-2556,ভাই একটু শুনবেন .,greeting,agent_request,,bn
+train-2564,whats new?,product_search,discount_offer,product_search,en
+train-2565,শুনেন একটু সময় হবে আপনার,greeting,agent_request,,bn
+train-2569,hello is anyone online,greeting,agent_request,,en
+train-2617,Kotodin,shipping_delivery,order_status,shipping_delivery,bl
+train-2627,শুনেন আচ্ছা ঠিক আছে ধন্যবাদ যাই,goodbye,thanks,goodbye,bn
+train-2643,lagbe না,order_cancel,goodbye,,mx
+train-2652,একটু shunben vai,greeting,agent_request,,mx
+train-2579,kobe পাবো,order_status,shipping_delivery,,mx
+train-2594,coupon kaj korche na,discount_offer,payment_issue,discount_offer,bl
+train-2609,what else,product_search,out_of_scope,,en
+train-2612,still there bro,product_availability,greeting,,en
+train-2742,ekhon order korle pabo reply diben please,product_availability,order_status,,bl
+train-2749,এটা ki bondho kore diyechen,product_availability,order_status,,mx
+train-2754,what will the sale price be,discount_offer,price_inquiry,,en
+train-2693,Eta ki bondho kore diyechen,product_availability,order_status,product_availability,bl
+train-2707,can i pay when ireceive it,shipping_delivery,payment_issue,,en
+train-2714,my coupon is not working,discount_offer,payment_issue,discount_offer,en
+train-2717,the colour bled on the firstwash,complaint,return_refund,complaint,en
+train-2723,chargekoto,shipping_delivery,price_inquiry,,bl
+train-2726,accha beshi nile kom rakhben ki apu,discount_offer,price_inquiry,discount_offer,bl
+train-2857,codeboshale kaj kore na keno,discount_offer,payment_issue,discount_offer,bl
+train-2861,ekon jete hobe,goodbye,out_of_scope,,bl
+train-2863,ektu shunbenvai,greeting,agent_request,,bl
+train-2882,আচ্ছা কেউ কি অনলাইনে আছেন দয়া করে,greeting,agent_request,,bn
+train-2883,vai kotodur elo amar parcel vai,order_status,shipping_delivery,order_status,bl
+train-2654,sale er সময় দাম koto hobe,discount_offer,price_inquiry,discount_offer,mx
+train-2681,headphone আছে ki,product_search,product_availability,,mx
+train-2690,ei bishoy ta upore janan?,agent_request,complaint,agent_request,bl
+train-2774,ki bollen bujhlm na kichui,out_of_scope,complaint,,bl
+train-2776,শুনেন কে তুমি আপু,out_of_scope,greeting,,bn
+train-2789,nicchena,payment_issue,complaint,payment_issue,bl
+train-2811,assalamu alaikum jai,goodbye,greeting,goodbye,bl
+train-2826,It says delivered but i did not get it,order_status,shipping_delivery,order_status,en
+train-2828,whats new,product_search,discount_offer,greeting,en
+train-2829,my coupon isnot working,discount_offer,payment_issue,discount_offer,en
+train-2833,delivery dhonnobad,shipping_delivery,thanks,shipping_delivery,bl
+train-2834,hotas,complaint,out_of_scope,,bl
+train-2839,can i pay when i receive it,shipping_delivery,payment_issue,,en
+train-2851,shunen ekhon order korle pabo apu,product_availability,shipping_delivery,product_availability,bl
+train-2898,শুনেন খবর কি,order_status,greeting,,bn
+train-2902,keu phone dhore na??,complaint,agent_request,complaint,bl
+train-2911,khaliache,product_availability,out_of_scope,,bl
+train-2913,Sale er somoy dam koto hobe,discount_offer,price_inquiry,discount_offer,bl
+train-2917,why is it taking so long,complaint,shipping_delivery,complaint,en
+train-2939,কালকে পাবো তো এটা,product_availability,shipping_delivery,order_status,bn
+train-2957,its been thre days and nothing yet,order_status,shipping_delivery,order_status,en
+train-2958,Panjabi ache ki,product_search,product_availability,,bl
+train-3013,আচ্ছা ১২৩৪৫৬ আপু,out_of_scope,order_status,,bn
+train-3022,amar ar dorkar nai eta agei dhonnobad,order_cancel,goodbye,,bl
+train-3028,১২৩৪৫৬,out_of_scope,order_status,,bn
+train-3033,batl,order_cancel,out_of_scope,,bl
+train-3038,monei gone,payment_issue,out_of_scope,,en
+train-3046,আজ পাবো কি আপু,order_status,shipping_delivery,order_status,bn
+train-2977,শুনেন এরর,payment_issue,complaint,payment_issue,bn
+train-2980,anything new for eid thanks in advance,product_search,discount_offer,product_search,en
+train-2999,when,order_status,out_of_scope,,en
+train-3104,hi apu onno kichu,product_search,greeting,,bl
+train-3111,accha tin din hoye gelo ekhono pai nai apu,order_status,shipping_delivery,order_status,bl
+train-3126,delivered dekhacche kintu pai nai .,order_status,shipping_delivery,complaint,bl
+train-3058,গেলাম একটু,goodbye,out_of_scope,,bn
+train-3060,কুপন কাজ করছে না .,discount_offer,payment_issue,,bn
+train-3086,kal ki chuti ache bhai,out_of_scope,shipping_delivery,,bl
+train-3087,sent by mistake thanks,out_of_scope,thanks,,en
+train-3140,ekdin এই noshto hoye গেছে jinis ta,complaint,return_refund,complaint,mx
+train-3147,can you send a price list,price_inquiry,product_search,,en
+train-3151,Assalamu alaikum jai,goodbye,greeting,,bl
+train-3169,একটু ক্যাশ অন ডেলিভারি আছে কি,shipping_delivery,payment_issue,,bn
+train-3223,hey when,order_status,shipping_delivery,order_status,en
+train-3232,কত টাকা ogrim dite hobe,shipping_delivery,payment_issue,price_inquiry,mx
+train-3239,Ki,out_of_scope,greeting,,bl
+train-3242,খবর কি,order_status,greeting,,bn
+train-3245,chobir sathe mil nai,complaint,return_refund,complaint,bl
+train-3301,botna,agent_request,out_of_scope,,bl
+train-3309,shunen shuvo ratri vai plz,goodbye,greeting,,bl
+train-3311,coupon kaj krche na,discount_offer,payment_issue,discount_offer,bl
+train-3256,ki bollen bujhlam na kicui,out_of_scope,agent_request,,bl
+train-3257,not nided,order_cancel,out_of_scope,,en
+train-3270,কথা বলতে পারি .,greeting,agent_request,,bn
+train-3273,ভাই শুনছেন আপু,greeting,agent_request,,bn
+train-3282,"ami ekhane notun tai ektu help korun, ache",product_availability,agent_request,,bl
+train-3421,eto deri কেন hocche,complaint,shipping_delivery,complaint,mx
+train-3422,Laptop ache ki,product_search,product_availability,,bl
+train-3450,amar order ta kobe pabo .,order_status,shipping_delivery,order_status,bl
+train-3451,শিপিং কস্ট কত প্লিজ,shipping_delivery,price_inquiry,shipping_delivery,bn
+train-3334,বেশি nile kom rakhben ki,discount_offer,price_inquiry,discount_offer,mx
+train-3340,eta ki bondho kore diiechen,product_availability,order_status,,bl
+train-3341,vai apu achen ki,greeting,agent_request,greeting,bl
+train-3345,acchatai,out_of_scope,greeting,,bl
+train-3355,koto taka ogrim dite hobe,shipping_delivery,payment_issue,price_inquiry,bl
+train-3356,vai saheb achen,greeting,agent_request,greeting,bl
+train-3367,ডেলিভারি হয়ে গেছে দেখাচ্ছে কিন্তু পাইনি,order_status,shipping_delivery,complaint,bn
+train-3386,nothing else needed bye thanks,goodbye,thanks,goodbye,en
+train-3511,vai ektu shunben vai,greeting,agent_request,,bl
+train-3519,code boshale kaj kore na keno,discount_offer,payment_issue,discount_offer,bl
+train-3531,শুনেন হাহাহা,out_of_scope,greeting,,bn
+train-3484,ok will you go lower if i buy more,discount_offer,price_inquiry,discount_offer,en
+train-3544,এখন অর্ডার করলে পাবো ভাই,product_availability,shipping_delivery,product_availability,bn
+train-3546,"আমার বন্ধু আপনাদের পেজ সাজেস্ট করলো, শুভ রাত্রি",goodbye,greeting,,bn
+train-3549,চার্জ কত,shipping_delivery,price_inquiry,shipping_delivery,bn
+train-3551,শুভ সকাল ঢাকার বাইরে,shipping_delivery,greeting,,bn
+train-3574,আপনারা কি khola achen ekhon,greeting,out_of_scope,,mx
+train-3619,is cash on delivery available??,shipping_delivery,payment_issue,,en
+train-3640,আচ্ছা পার্সেল হাতে পেয়ে টাকা দিবো,shipping_delivery,payment_issue,shipping_delivery,bn
+train-3580,pure ashbo,goodbye,out_of_scope,,bl
+train-3669,ফেইল,payment_issue,complaint,,bn
+train-3673,laptop ache ki,product_search,product_availability,,bl
+train-3690,assalamu alaikum not needed,order_cancel,goodbye,,en
+train-3703,Hmm,out_of_scope,greeting,,en
+train-3709,শুনেন কথা বলতে পারি,greeting,agent_request,,bn
+train-3722,headphone ache কি,product_search,product_availability,,mx
+train-3799,ok hahaha,out_of_scope,greeting,,en
+train-3807,ল্যাপটপ আছে কি,product_search,product_availability,,bn
+train-3829,শুনেন তিন দিন হয়ে গেল এখনো পেলাম না,order_status,shipping_delivery,complaint,bn
+train-3745,আচ্ছা নতুন কিছু আপু,product_search,discount_offer,product_search,bn
+train-3750,anything new for eid,product_search,discount_offer,product_search,en
+train-3761,রঙ উঠে গেছে প্রথম ধোয়াতেই প্লিজ,complaint,return_refund,complaint,bn
+train-3764,"my friend suggested your page, thats all for now",goodbye,thanks,,en
+train-3768,কোড বসালে কাজ করে না কেন,discount_offer,payment_issue,discount_offer,bn
+train-3878,ekhon orderkorle pabo,product_availability,shipping_delivery,order_status,bl
+train-3881,তিন দিন হয়ে গেল এখনো পেলাম না??,order_status,shipping_delivery,complaint,bn
+train-3906,can you reduce the prce,price_inquiry,discount_offer,price_inquiry,en
+train-3915,accha tai,out_of_scope,thanks,,bl
+train-3916,কুরিয়ারে দিয়েছেন কি,order_status,shipping_delivery,order_status,bn
+train-3919,হ্যালো কেউ কি আছেন ভাই,greeting,agent_request,greeting,bn
+train-3979,আচ্ছা এটা কি বন্ধ করে দিয়েছেন,product_availability,order_status,product_availability,bn
+train-3989,এত দেরি কেন হচ্ছে,complaint,shipping_delivery,complaint,bn
+train-4005,laptop আছে ki,product_search,product_availability,,mx
+train-4018,ami last week apnader theke order korechilam ar pore abar kotha hobe,goodbye,order_status,,bl
+train-4020,keuachen,greeting,agent_request,,bl
+train-4022,স্যার আছেন ভাই,greeting,agent_request,,bn
+train-4027,ভাই একটু শুনবেন,greeting,agent_request,,bn
+train-4045,কালকে পাবো তো এটা ভাই,product_availability,shipping_delivery,,bn
+train-4051,খবর কি একটু,order_status,greeting,,bn
+train-4144,ভাই কি,out_of_scope,greeting,,bn
+train-4168,panjabi acheki,product_search,product_availability,,bl
+train-4100,কি বললেন বুঝলাম না কিছুই একটু,out_of_scope,complaint,,bn
+train-4104,ektu eta ki bondho kore diyechen bhai,product_availability,order_status,order_cancel,bl
+train-4108,areyou a human,out_of_scope,agent_request,,en
+train-4109,hi apu headphone ache ki,product_search,product_availability,greeting,bl
+train-4067,ok it says delivered but i did not get it sir,order_status,shipping_delivery,complaint,en
+train-4077,"amar bondhu apnader page suggest korlo, kotha bola jabe",greeting,agent_request,,bl
+train-4090,অন্য কিছু ধন্যবাদ,product_search,goodbye,,bn
+train-3940,anything else??,product_search,out_of_scope,,en
+train-3970,Will update you later,goodbye,out_of_scope,,en
+train-4189,Other options,product_search,out_of_scope,,en
+train-4211,Onno kichu,product_search,out_of_scope,,bl
+train-4230,একটু কেউ কি অনলাইনে আছেন,greeting,agent_request,,bn
+train-4235,আরো ektu kom rakha jay না,discount_offer,price_inquiry,,mx
+train-4246,has itbeen handed to courier,order_status,shipping_delivery,order_status,en
+train-4250,ল্যাপটপ আছে কি রিপ্লাই দিবেন প্লিজ,product_search,product_availability,,bn
+train-4252,is the small size free,product_availability,price_inquiry,product_availability,en
+train-4253,shunen ki bhai,out_of_scope,greeting,agent_request,bl
+train-4259,anything new foreid,product_search,discount_offer,,en
+train-4265,চার্জ কত ভাই,shipping_delivery,price_inquiry,,bn
+train-4279,আচ্ছা কবে পাবো আমার অর্ডার,order_status,shipping_delivery,order_status,bn
+train-4281,nothing,out_of_scope,goodbye,,en
+train-4288,শুনেন সেলের সময় দাম কত হবে,discount_offer,price_inquiry,discount_offer,bn
+train-4304,ভাই সাহেব আছেন প্লিজ,greeting,agent_request,,bn
+train-4316,hello isanyone online,greeting,agent_request,,en
+train-4335,sent by mistake,out_of_scope,order_cancel,,en
+train-4336,done .,goodbye,thanks,,en
+train-4388,are you a human .,out_of_scope,agent_request,,en
+train-4412,sale er somoy dam koto হবে,discount_offer,price_inquiry,discount_offer,mx
+train-4416,er cheye sosta kichu ache .,price_inquiry,product_search,price_inquiry,bl
+train-4422,কত টাকা অগ্রিম দিতে হবে??,shipping_delivery,payment_issue,price_inquiry,bn
+train-4340,so where asap,order_status,shipping_delivery,,en
+train-4342,kotha bolajabe,greeting,agent_request,,bl
+train-4352,ভাঙা জিনিস পেয়েছি প্লিজ,complaint,return_refund,complaint,bn
+train-4353,হ্যালো হ্যালো একটু,greeting,agent_request,greeting,bn
+train-4357,ektu shunben vai,greeting,agent_request,,bl
+train-4359,vul kore messge diyechi,out_of_scope,thanks,,bl
+train-4375,একটু পরে জানাবো,goodbye,greeting,,bn
+train-4465,why does my code not apply,discount_offer,payment_issue,discount_offer,en
+train-4485,ok tahle,goodbye,thanks,,bl
+train-4493,সালাম আছে,product_availability,greeting,,bn
+train-4508,tin din hoye gelo ekhono pai nai agei dhonnobad,order_status,shipping_delivery,thanks,bl
+train-4510,headphone ache ki,product_search,product_availability,,bl
+train-4519,আমি গত সপ্তাহে আপনাদের থেকে অর্ডার করেছিলাম আর ১২৩৪৫৬,out_of_scope,order_status,,bn
+train-4523,কুরিয়ারে দিয়েছেন কি রিপ্লাই দিবেন প্লিজ,order_status,shipping_delivery,,bn
+train-4525,will i get it today,order_status,shipping_delivery,,en
+train-4543,"অনেকদিন অপেক্ষা করছি, শীতের জন্য মোবাইল আছে",product_search,product_availability,,bn
+train-4545,ডেলিভারি হয়ে গেছে দেখাচ্ছে কিন্তু পাইনি একটু,order_status,shipping_delivery,complaint,bn
+train-4619,কেন প্লিজ,out_of_scope,complaint,,bn
+train-4645,Accha tai,out_of_scope,thanks,,bl
+train-4649,ekdin ei noshto hoye gache jinis ta?,complaint,return_refund,complaint,bl
+train-4652,ভুল করে মেসেজ দিয়েছি প্লিজ,out_of_scope,thanks,,bn
+train-4654,kal ki chuti ace,out_of_scope,shipping_delivery,,bl
+train-4657,excuse me its been three days and nothing yet sir,order_status,shipping_delivery,complaint,en
+train-4680,is cash on delivery available,shipping_delivery,payment_issue,shipping_delivery,en
+train-4690,আচ্ছা এত দেরি কেন হচ্ছে ভাই,complaint,shipping_delivery,complaint,bn
+train-4712,কালকের অর্ডার আজ পাবো তো আপু,order_status,shipping_delivery,order_status,bn
+train-4732,কবে পাবো,order_status,shipping_delivery,order_status,bn
+train-4733,শুনছেন আমার কথা,greeting,agent_request,,bn
+train-4775,Koto taka ogrim dite hobe,shipping_delivery,price_inquiry,payment_issue,bl
+train-4812,why is it taking so long?,complaint,shipping_delivery,complaint,en
+train-4815,cash on dlivery ache ki,shipping_delivery,payment_issue,product_availability,bl
+train-4820,কত টাকা অগ্রিম দিতে হবে ভাই,shipping_delivery,price_inquiry,,bn
+train-4853,সেলের সময় দাম কত হবে .,discount_offer,price_inquiry,discount_offer,bn
+train-4855,headphone ache ki .,product_search,product_availability,,bl
+train-4917,panjabi ache ki,product_search,product_availability,product_search,bl
+train-4919,code bshale kaj kore na keno,discount_offer,payment_issue,discount_offer,bl
+train-4920,which is the cheapesht one,price_inquiry,product_search,price_inquiry,en
+train-4924,hey what will the sale price be bro,discount_offer,price_inquiry,discount_offer,en
+train-4927,Aro ektu kom rakha jay na,discount_offer,price_inquiry,discount_offer,bl
+train-4862,sheeter jonno headphone আছে,product_search,product_availability,,mx
+train-4871,it says delivered but i did not get it,order_status,shipping_delivery,order_status,en
+train-4946,vai sheeter jonno kurti ache apu,product_search,product_availability,,bl
+train-4963,ডেলিভারি আগেই ধন্যবাদ,shipping_delivery,thanks,shipping_delivery,bn
+train-5030,can i pay when i recive it,shipping_delivery,payment_issue,,en
+train-5036,এটা কি বন্ধ করে দিয়েছেন প্লিজ,product_availability,order_cancel,order_status,bn
+train-5052,কিছু না .,out_of_scope,goodbye,,bn
+train-5084,"i am new here so please help, ok then bye",goodbye,greeting,goodbye,en
+train-5085,কথা বলতে পারি,greeting,agent_request,,bn
+train-4984,কোড বসালে কাজ করে না কেন দয়া করে,discount_offer,payment_issue,discount_offer,bn
+train-4985,shuvo ratri vai,goodbye,greeting,,bl
+train-5010,একটু ডেলিভারি হয়ে গেছে দেখাচ্ছে কিন্তু পাইনি,order_status,shipping_delivery,order_status,bn
+train-5122,tin din hoye gelo এখনো pai nai,order_status,shipping_delivery,order_status,mx
+train-5141,Its been three days and nothing yet,order_status,shipping_delivery,order_status,en
+train-5142,ashi??,goodbye,greeting,,bl
+train-5145,got any,product_availability,product_search,,en
+train-5154,শেষ,goodbye,product_availability,,bn
+train-5163,আমি গত সপ্তাহে আপনাদের থেকে অর্ডার করেছিলাম আর এর চেয়ে সস্তা কিছু আছে,price_inquiry,product_search,,bn
+train-5168,hello which is the cheapest one,price_inquiry,product_search,price_inquiry,en
+train-5182,why is it taking so long please reply,complaint,shipping_delivery,complaint,en
+train-5188,cash on delivery ache ki,shipping_delivery,payment_issue,product_availability,bl
+train-5205,What is this,complaint,out_of_scope,,en
+train-5217,পাঞ্জাবি আছে কি প্লিজ,product_search,product_availability,,bn
+train-5222,anything else,product_search,out_of_scope,,en
+train-5228,aro ektu kom rakha jay na,discount_offer,price_inquiry,discount_offer,bl
+train-5253,What else,product_search,out_of_scope,,en
+train-5255,cash on delivery ache ki??,shipping_delivery,payment_issue,product_availability,bl
+train-5389,এখন order korle pabo,product_availability,shipping_delivery,order_status,mx
+train-5401,hey hello is anyone online asap,greeting,agent_request,,en
+train-5408,is the small size free .,product_availability,price_inquiry,,en
+train-5418,আজ পাবো কি,order_status,shipping_delivery,,bn
+train-5421,ektu shunben vai .,greeting,agent_request,,bl
+train-5305,কুরিয়ারে দিয়েছেন কি একটু,order_status,shipping_delivery,order_status,bn
+train-5312,kothay?,order_status,shipping_delivery,order_status,bl
+train-5316,any update on my shipment?,order_status,shipping_delivery,order_status,en
+train-5321,ekhono opekkha korchi জিনিস ta kothay,order_status,shipping_delivery,order_status,mx
+train-5323,শাড়ি আছে কি প্লিজ,product_search,product_availability,product_search,bn
+train-5340,kobe pabo আমার order,order_status,shipping_delivery,order_status,mx
+train-5290,আচ্ছা স্যার আছেন দয়া করে,greeting,agent_request,greeting,bn
+train-5349,Kotha bola jabe,greeting,agent_request,,bl
+train-5373,শুনছেন প্লিজ,greeting,agent_request,,bn
+train-5382,"i am new here so please help, where",order_status,product_search,,en
+train-5428,hey can we talk,greeting,agent_request,,en
+validation-23,"i am new here so please help, oh really",out_of_scope,greeting,,en
+validation-73,"onek din opekkha korchi, hey ki obostha",greeting,order_status,complaint,bl
+validation-85,ami last week apnader theke order korechilam ar dekha hobe,goodbye,order_status,,bl
+validation-122,আমার মালটা কোথায় আটকে আছে??,order_status,shipping_delivery,order_status,bn
+validation-137,kalke pabo to eta?,product_availability,shipping_delivery,order_status,bl
+validation-38,tracking number din vai,order_status,shipping_delivery,order_status,bl
+validation-46,is tomorrow a holiday,out_of_scope,shipping_delivery,,en
+validation-51,sorry to bother you but will it be there tomorrow,product_availability,shipping_delivery,,en
+validation-56,ektu vanga jinis peyechi vai,complaint,return_refund,complaint,bl
+validation-61,Is tomorrow a holiday,out_of_scope,shipping_delivery,,en
+validation-66,Oh really,out_of_scope,greeting,,en
+validation-161,the stitching came apart in one day,complaint,return_refund,complaint,en
+validation-173,vnga jinis peyechi,complaint,return_refund,complaint,bl
+validation-179,মানা যায় না ধন্যবাদ,complaint,thanks,complaint,bn
+validation-181,kalke pabo to এটা,product_availability,shipping_delivery,order_status,mx
+validation-212,আচ্ছা তাই আপু,out_of_scope,greeting,,bn
+validation-239,একটু তোমার নাম কি,out_of_scope,agent_request,,bn
+validation-249,will it be there tomorrow,product_availability,shipping_delivery,product_availability,en
+validation-269,আমি গত সপ্তাহে আপনাদের থেকে অর্ডার করেছিলাম আর রাখছি এখন,goodbye,order_status,,bn
+validation-312,কেউ আছেন,greeting,agent_request,,bn
+validation-317,আচ্ছা তাই,out_of_scope,greeting,,bn
+validation-328,"my friend suggested your page, anything cheaper than this",price_inquiry,discount_offer,product_search,en
+validation-343,Kalke pabo to eta,product_availability,shipping_delivery,,bl
+validation-350,vai vai ektu somoy hobe vai,greeting,agent_request,,bl
+validation-365,dekha hobe,goodbye,out_of_scope,,bl
+validation-377,কেউ আছেন ভাই,greeting,agent_request,,bn
+validation-386,lter,goodbye,out_of_scope,,en
+validation-416,vanga jinispeyechi,complaint,return_refund,complaint,bl
+validation-429,123456,out_of_scope,order_status,,en
+validation-462,kalke pabo to eta,product_availability,order_status,shipping_delivery,bl
+validation-465,হুম আপু,out_of_scope,greeting,,bn
+validation-466,ektu kalke pabo to eta,product_availability,order_status,shipping_delivery,bl
+validation-468,discount soho koto,price_inquiry,discount_offer,price_inquiry,bl
+validation-475,when will i receive my ordr,order_status,shipping_delivery,,en
+validation-490,kalke পাবো to eta,product_availability,shipping_delivery,,mx
+validation-508,where is last weeks order?,order_status,shipping_delivery,order_status,en
+validation-558,vanga জিনিস peyechi,complaint,return_refund,complaint,mx
+validation-559,dkha hobe,goodbye,out_of_scope,,bl
+validation-560,Will it be there tomorrow,product_availability,shipping_delivery,product_availability,en
+validation-586,"ami ekhane notun tai ektu help korun, eta ki holo",complaint,agent_request,,bl
+validation-596,হুম,out_of_scope,greeting,,bn
+validation-599,free delivery koto tkar order e,shipping_delivery,discount_offer,,bl
+validation-615,keno .,out_of_scope,complaint,,bl
+validation-617,ভাই ektu somoy হবে,greeting,agent_request,,mx
+validation-624,Keno,out_of_scope,complaint,,bl
+validation-631,vaiektu somoy hobe,greeting,agent_request,,bl
+validation-647,oh realli,out_of_scope,greeting,,en
+validation-700,আচ্ছা তাই .,out_of_scope,thanks,,bn
+validation-713,excuse me will it be there tomorrow sir,product_availability,shipping_delivery,,en
+validation-718,dekha hobe?,goodbye,greeting,,bl
+validation-738,ok deal sir,discount_offer,thanks,,en
+validation-747,ভাই কেউ আছেন,greeting,agent_request,,bn
+validation-761,excuse me 123456,out_of_scope,order_status,,en
+test-17,error,payment_issue,complaint,,en
+test-26,শুনেন কোথায়,order_status,agent_request,,bn
+test-32,so how much advance is needed sir,shipping_delivery,price_inquiry,payment_issue,en
+test-59,ok ok ok ok,out_of_scope,thanks,,en
+test-60,আরেকটু কম রাখা যায় না .,discount_offer,price_inquiry,,bn
+test-66,shobcheye kom dami kunta agei dhonnobad,price_inquiry,product_search,price_inquiry,bl
+test-78,Parcel hate peye taka dibo,shipping_delivery,payment_issue,shipping_delivery,bl
+test-81,errr,payment_issue,out_of_scope,,en
+test-85,aj pabu ki,order_status,shipping_delivery,order_status,bl
+test-129,i ordered from you last week and how much though,price_inquiry,order_status,,en
+test-162,ছবির সাথে মিল নেই .,complaint,return_refund,complaint,bn
+test-165,code,discount_offer,out_of_scope,,bl
+test-171,Shobcheye kom dami kunta,price_inquiry,product_search,price_inquiry,bl
+test-182,khoborki,order_status,greeting,,bl
+test-217,i did not understand anythng you said,out_of_scope,agent_request,,en
+test-225,আসসালামু আলাইকুম ভাই পাবো,product_availability,greeting,,bn
+test-243,আসসালামু আলাইকুম ভাই ডেলিভারি চার্জ কত,shipping_delivery,price_inquiry,greeting,bn
+test-246,শুনেন কোথায় দয়া করে,order_status,agent_request,order_status,bn
+test-251,ডেলিভারি চার্জ কত দয়া করে,shipping_delivery,price_inquiry,,bn
+test-254,eid erjonno notun kichu ache,product_search,discount_offer,product_search,bl
+test-258,ektu vaiya achen ektu,greeting,agent_request,,bl
+test-270,khubor ki,order_status,greeting,,bl
+test-278,show me the cheaper options,product_search,price_inquiry,product_search,en
+test-287,anyone there,greeting,agent_request,greeting,en
+test-290,একটু ওকে তাহলে,goodbye,out_of_scope,,bn
+test-299,ektu code,discount_offer,out_of_scope,,bl
+test-304,shobcheye komdami kunta,price_inquiry,product_search,price_inquiry,bl
+test-306,how much advance is neded,shipping_delivery,payment_issue,price_inquiry,en
+test-326,accha bad din bhai,order_cancel,goodbye,,bl
+test-327,will yesterdays order arrive today,order_status,shipping_delivery,order_status,en
+test-329,shobcheye kom dami kunta,price_inquiry,product_search,price_inquiry,bl
+test-338,khobor ki,order_status,greeting,,bl
+test-357,is this chat actve,greeting,order_status,agent_request,en
+test-360,আচ্ছা তুমি কি মানুষ,out_of_scope,agent_request,,bn
+test-427,vai eid er jonno notun kichu ache ektu,product_search,discount_offer,product_search,bl
+test-428,chai na?,order_cancel,out_of_scope,,bl
+test-439,aj pabo ki,order_status,shipping_delivery,order_status,bl
+test-375,raki,goodbye,out_of_scope,,bl
+test-376,আজ পাবো ki,order_status,shipping_delivery,order_status,mx
+test-393,anyne there,greeting,agent_request,,en
+test-401,শুনেন তুমি কি মানুষ,out_of_scope,agent_request,,bn
+test-451,আমি গত সপ্তাহে আপনাদের থেকে অর্ডার করেছিলাম আর পাবো,product_availability,order_status,,bn
+test-458,okok ok ok,out_of_scope,thanks,,en
+test-468,সালাম কতদিন,shipping_delivery,greeting,,bn
+test-470,anyonethere,greeting,out_of_scope,,en
+test-475,Show me the cheaper options,product_search,price_inquiry,,en
+test-501,sorry to bother you but anyone there,greeting,agent_request,,en
+test-503,Rakhi,goodbye,out_of_scope,,bl
+test-512,ওকে তাহলে,goodbye,thanks,,bn
+test-524,couriere diyechen ki,order_status,shipping_delivery,,bl
+test-532,ছবির সাথে মিল নেই দয়া করে,complaint,return_refund,complaint,bn
+test-533,Anyone there,greeting,agent_request,,en
+test-537,ছবির সাথে মিল নেই,complaint,return_refund,complaint,bn
+test-540,sheshh,goodbye,product_availability,,bl
+test-549,ওকে তাহলে দয়া করে,goodbye,thanks,,bn
+test-551,salam chai na,order_cancel,out_of_scope,,bl
+test-560,excuse me hi are you there asap,greeting,agent_request,,en
+test-572,তুমি কি মানুষ,out_of_scope,agent_request,,bn
+test-574,i did not understand anything yousaid,out_of_scope,agent_request,,en
+test-576,achn,greeting,out_of_scope,,bl
+test-581,i did not understand anyting you said,out_of_scope,agent_request,,en
+test-606,baddin,order_cancel,out_of_scope,,bl
+test-625,সব ভালো তো আপনার,greeting,thanks,,bn
+test-643,shunen aj pabo ki bhai,order_status,shipping_delivery,order_status,bl
+test-647,শুনেন আরেকটু কম রাখা যায় না,discount_offer,price_inquiry,discount_offer,bn
+test-669,আরেকটু কম রাখা যায় না,discount_offer,price_inquiry,discount_offer,bn
+test-670,hey ok ok ok ok,out_of_scope,thanks,,en
+test-672,i did not understand anything you said,out_of_scope,complaint,agent_request,en
+test-765,বিরক্ত করার জন্য দুঃখিত কিন্তু চাই না,order_cancel,goodbye,,bn
+test-777,how much advance is needed,shipping_delivery,price_inquiry,,en
+test-785,Bad din,order_cancel,complaint,,bl
+test-800,khobr ki,order_status,greeting,,bl
+test-741,কোথায়??,order_status,shipping_delivery,,bn
+test-749,salam code,discount_offer,greeting,,bl
+test-750,আরেকটু কম রাখা যায় না আপু,discount_offer,price_inquiry,,bn
+test-689,একটু চাই না,order_cancel,out_of_scope,,bn
+test-692,cude,discount_offer,out_of_scope,,bl
+test-707,তুমি কি মানুষ প্লিজ,out_of_scope,agent_request,,bn
+test-715,চাই na,order_cancel,out_of_scope,,mx

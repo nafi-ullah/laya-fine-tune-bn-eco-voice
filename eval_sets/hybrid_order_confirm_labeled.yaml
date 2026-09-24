@@ -1,0 +1,29 @@
+# Labeled intent set for the Phase-3 confusion-matrix gate (ORDER_CONFIRM).
+# Mix of canonical (regex) and paraphrased (embedding) utterances.
+# Gate: zero yes↔no leakage (a yes-labeled item must never resolve to `no`, nor vice versa).
+# Escalation (out_of_scope) is a SAFE outcome, not leakage.
+state: ORDER_CONFIRM
+flow: order_confirmation
+labels:
+  # --- yes ---
+  - { utterance: "হ্যাঁ", intent: "yes" }
+  - { utterance: "জি", intent: "yes" }
+  - { utterance: "হ্যাঁ ঠিক আছে করে দেন", intent: "yes" }
+  - { utterance: "অর্ডারটা কনফার্ম করে দিন", intent: "yes" }
+  - { utterance: "ঠিক আছে নিয়ে নিন", intent: "yes" }
+  - { utterance: "আচ্ছা রাখেন", intent: "yes" }
+  # --- no ---
+  - { utterance: "না", intent: "no" }
+  - { utterance: "অর্ডারটা বাতিল করে দেন", intent: "no" }
+  - { utterance: "এখন আর দরকার নেই", intent: "no" }
+  - { utterance: "হ্যাঁ লাগবে না", intent: "no" }
+  - { utterance: "ক্যান্সেল করে দেন", intent: "no" }
+  - { utterance: "চাই না", intent: "no" }
+  # --- repeat ---
+  - { utterance: "আবার বলেন", intent: "repeat" }
+  - { utterance: "কী বললেন বুঝিনি", intent: "repeat" }
+  - { utterance: "আরেকবার বলুন", intent: "repeat" }
+  # --- out of scope (should escalate) ---
+  - { utterance: "ডেলিভারি কখন আসবে", intent: "out_of_scope" }
+  - { utterance: "ডেলিভারি ম্যান কি বিকাশে নিবে", intent: "out_of_scope" }
+  - { utterance: "প্রোডাক্টের মান কেমন", intent: "out_of_scope" }
